@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Lato&display=swap');
+
+/*  ------------- General ---------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'judson', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
