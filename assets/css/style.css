@@ -15,3 +15,23 @@ p {
     font-family: 'Lato', sans-serif;
 }
 
+
+/*  ------------- Game Styles ---------------- */
+
+.game-container {
+    height: 70vh;
+    width: 100%;
+    border: 1px solid;
+}
+
+.game-row {
+    height: 25%;
+}
+
+.game-col {
+    
+}
+
+.game-card-style {
+    margin: auto;
+}
