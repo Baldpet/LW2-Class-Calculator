@@ -19,7 +19,7 @@ p {
 /*  ------------- Game Styles ---------------- */
 
 .game-container {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     border: 1px solid;
 }
@@ -34,4 +34,19 @@ p {
 
 .game-card-style {
     margin: auto;
+    height: 80%;
+    width: 80%;
+    background-color: grey;  
+}
+
+.game-card-back {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/skulls2_faded.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px red solid;
 }
