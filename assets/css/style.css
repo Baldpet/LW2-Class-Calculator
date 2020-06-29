@@ -25,6 +25,10 @@ body {
     background-color: white;
 }
 
+.break {
+    height: 1.75rem;
+}
+
 /*  ------------- Colors ---------------- */
 
 
@@ -50,9 +54,7 @@ header {
     padding: 0;
 }
 
-.break {
-    height: 100px;
-}
+
 
 /*  ------------- Game Intro ---------------- */
 
