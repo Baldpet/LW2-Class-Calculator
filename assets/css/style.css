@@ -9,6 +9,7 @@ h4,
 h5 {
     font-family: 'judson', sans-serif;
     font-weight: 700;
+    text-align: center;
 }
 
 p {
@@ -29,6 +30,10 @@ body {
 
 /*  ------------- Header ---------------- */
 
+header {
+    margin-bottom: 30px;
+}
+
 
 /*  ------------- Hero Image ---------------- */
 
@@ -41,11 +46,18 @@ body {
 }
 
 .hero-container {
+    margin-top: 85px;
     padding: 0;
 }
 
 .break {
     height: 100px;
+}
+
+/*  ------------- Game Intro ---------------- */
+
+.container-game-intro {
+    margin-top: 85px;
 }
 
 /*  ------------- Game Styles ---------------- */
