@@ -15,6 +15,38 @@ p {
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    background-image: url(../images/ufo.jpg);
+    
+}
+
+.container {
+    background-color: white;
+}
+
+/*  ------------- Colors ---------------- */
+
+
+/*  ------------- Header ---------------- */
+
+
+/*  ------------- Hero Image ---------------- */
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 10px 10px;
+    box-shadow: -3px 3px 5px 6px black;
+    
+}
+
+.hero-container {
+    padding: 0;
+}
+
+.break {
+    height: 100px;
+}
 
 /*  ------------- Game Styles ---------------- */
 
