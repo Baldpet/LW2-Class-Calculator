@@ -105,7 +105,7 @@ header {
 
 .game-card-style:active {
     transform: scale(.97);
-    transition: .3s;
+    transition: .8s;
 }
 
 .game-card-back {
