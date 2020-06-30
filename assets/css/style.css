@@ -29,6 +29,10 @@ body {
     height: 1.75rem;
 }
 
+.hidden {
+    display: none;
+}
+
 /*  ------------- Colors ---------------- */
 
 
@@ -83,6 +87,12 @@ header {
     height: 80vh;
     width: 100%;
     border: 1px solid;
+}
+
+.game-start {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
 }
 
 .game-row {

@@ -45,9 +45,10 @@ function cardDraw(){
     return
 }
 
-var test = cardDraw
-
-console.log(test)
+$(".start").click(function(){
+    $(".game-start-container").addClass("hidden");
+    $(".card-container").removeClass("hidden");
+})
 
 // ---------card flipping ------------
 
