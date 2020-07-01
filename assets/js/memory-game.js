@@ -144,29 +144,30 @@ function deckFour(){
 
 function difficulty(){
     var difficultyNum = $(".star-active").length;
-    return;
+    return difficultyNum;
 }
 
 function cardDraw(){
-    if(difficulty === 1){
-        "1"
-    } else if(difficulty === 2) {
-        "2"
-    } else if(difficulty === 3) {
-        "3"
+    if(difficulty() === 1){
+        var deck = deckOne();
+    } else if(difficulty() === 2) {
+        var deck = deckTwo();
+    } else if(difficulty() === 3) {
+        var deck = deckThree();
     } else {
-        "4"
-    }
-    return
+        var deck = deckFour();
+    };
+
+    console.log(deck);
+
+    return deck
 }
 
 $(".start").click(function(){
     $(".game-start-container").addClass("hidden");
     $(".card-container").removeClass("hidden");
-    deckOne();
-    deckTwo();
-    deckThree();
-    deckFour();
+    cardDraw()
+
 })
 
 // ---------card flipping ------------
