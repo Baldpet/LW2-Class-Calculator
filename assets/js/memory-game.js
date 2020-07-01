@@ -147,13 +147,19 @@ function cardDraw(){
     return deck
 }
 
+// ---------Adding the deck to the gameboard ------------
+
+// ---------timer & best time ------------
+
+// ---------attempt counter ------------
+
 // ---------start game ------------
 
 $(".start").click(function(){
     $(".game-start-container").addClass("hidden");
     $(".card-container").removeClass("hidden");
-    cardDraw()
-
+    var deck = cardDraw();
+    
 })
 
 // ---------reset game ------------
@@ -161,6 +167,7 @@ $(".start").click(function(){
 $(".reset-button").click(function(){
     $(".game-start-container").removeClass("hidden");
     $(".card-container").addClass("hidden");
+    $(".game-card-front").removeClass(["soldier-1", "soldier-2", "soldier-3", "soldier-4", "soldier-5", "soldier-6", "soldier-7", "muton", "sectoid", "chryssalid"]);
 })
 
 
