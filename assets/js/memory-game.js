@@ -58,10 +58,6 @@ function deckOne(){
         deckOne.push(alienDeckOne[i]);
         deckOne.push(alienDeckOne[i]);
     }
-    
-    console.log(soldierDeckOne);
-    console.log(alienDeckOne);
-    console.log(deckOne);
 
     shuffle(deckOne);
 
@@ -83,10 +79,6 @@ function deckTwo(){
         deckTwo.push(alienDeckTwo[i]);
     }
     
-    console.log(soldierDeckTwo);
-    console.log(alienDeckTwo);
-    console.log(deckTwo);
-
     shuffle(deckTwo);
 
     return deckTwo;
@@ -106,11 +98,7 @@ function deckThree(){
         deckThree.push(alienDeckThree[i]);
         deckThree.push(alienDeckThree[i]);
     }
-    
-    console.log(soldierDeckThree);
-    console.log(alienDeckThree);
-    console.log(deckThree);
-
+   
     shuffle(deckThree);
 
     return deckThree;
@@ -132,10 +120,6 @@ function deckFour(){
         deckFour.push(alienDeckFour[i]);
     }
     
-    console.log(soldierDeckFour);
-    console.log(alienDeckFour);
-    console.log(deckFour);
-
     shuffle(deckFour);
 
     return deckFour;
@@ -163,12 +147,22 @@ function cardDraw(){
     return deck
 }
 
+// ---------start game ------------
+
 $(".start").click(function(){
     $(".game-start-container").addClass("hidden");
     $(".card-container").removeClass("hidden");
     cardDraw()
 
 })
+
+// ---------reset game ------------
+
+$(".reset-button").click(function(){
+    $(".game-start-container").removeClass("hidden");
+    $(".card-container").addClass("hidden");
+})
+
 
 // ---------card flipping ------------
 
