@@ -1,6 +1,23 @@
 const soldierDeck = ["soldier1","soldier2","soldier3", "soldier4", "soldier5", "soldier6", "soldier7"];
 const alienDeck = ["muton", "chryssalid", "sectoid"];
 
+// --------- Fisher-Yates shuffle ------------
+
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (0 != currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array
+}
+
 // ---------Difficulty Switching ------------
 
 $(".fa-star").click(function(){
