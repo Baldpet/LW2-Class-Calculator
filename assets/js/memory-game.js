@@ -1,4 +1,4 @@
-const soldierDeck = ["soldier1","soldier2","soldier3", "soldier4", "soldier5", "soldier6", "soldier7"];
+const soldierDeck = ["soldierA","soldierB","soldierC", "soldierD", "soldierE", "soldierF", "soldierG"];
 const alienDeck = ["muton", "chryssalid", "sectoid"];
 
 // --------- Fisher-Yates shuffle ------------
@@ -149,6 +149,17 @@ function cardDraw(){
 
 // ---------Adding the deck to the gameboard ------------
 
+function newGame(){
+    var deck = cardDraw();
+
+    $(".game-card-front").each(function(i){
+        $(this).addClass(deck[i]);
+    });
+   
+
+
+}
+
 // ---------timer & best time ------------
 
 // ---------attempt counter ------------
@@ -158,6 +169,7 @@ function cardDraw(){
 $(".start").click(function(){
     $(".game-start-container").addClass("hidden");
     $(".card-container").removeClass("hidden");
+    newGame()
     var deck = cardDraw();
     
 })
@@ -167,7 +179,7 @@ $(".start").click(function(){
 $(".reset-button").click(function(){
     $(".game-start-container").removeClass("hidden");
     $(".card-container").addClass("hidden");
-    $(".game-card-front").removeClass(["soldier-1", "soldier-2", "soldier-3", "soldier-4", "soldier-5", "soldier-6", "soldier-7", "muton", "sectoid", "chryssalid"]);
+    $(".game-card-front").removeClass(["soldierA", "soldierB", "soldierC", "soldierD", "soldierE", "soldierF", "soldierG", "muton", "sectoid", "chryssalid"]);
 })
 
 

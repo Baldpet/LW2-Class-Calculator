@@ -147,7 +147,7 @@ header {
 
 /*  ------------- Soldier/Alien ---------------- */
 
-.soldier-1 {
+.soldierA {
     background-image: url(../images/soldier-1.png);
     background-color: blue;
     background-repeat: no-repeat;
@@ -155,7 +155,7 @@ header {
     background-position: center;
 }
 
-.soldier-2 {
+.soldierB {
     background-image: url(../images/soldier-2.png);
     background-color: blue;
     background-repeat: no-repeat;
@@ -163,7 +163,7 @@ header {
     background-position: center;
 }
 
-.soldier-3 {
+.soldierC {
     background-image: url(../images/soldier-3.png);
     background-color: blue;
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@ header {
     background-position: center;
 }
 
-.soldier-4 {
+.soldierD {
     background-image: url(../images/soldier-4.png);
     background-color: blue;
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@ header {
     background-position: center;
 }
 
-.soldier-5 {
+.soldierE {
     background-image: url(../images/soldier-5.png);
     background-color: blue;
     background-repeat: no-repeat;
@@ -187,7 +187,7 @@ header {
     background-position: center;
 }
 
-.soldier-6 {
+.soldierF {
     background-image: url(../images/soldier-6.png);
     background-color: blue;
     background-repeat: no-repeat;
@@ -195,7 +195,7 @@ header {
     background-position: center;
 }
 
-.soldier-7 {
+.soldierG {
     background-image: url(../images/soldier-7.png);
     background-color: blue;
     background-repeat: no-repeat;
