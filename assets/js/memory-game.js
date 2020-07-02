@@ -183,6 +183,7 @@ $(".start").click(function(){
     $(".card-container").removeClass("hidden");
     newGame();
     startTimer();
+    //flipCard();
    
 })
 
@@ -193,43 +194,93 @@ $(".reset-button").click(function(){
     $(".card-container").addClass("hidden");
     $(".game-card-front").removeClass(["soldierA", "soldierB", "soldierC", "soldierD", "soldierE", "soldierF", "soldierG", "muton", "sectoid", "chryssalid"]);
     $(".game-card-style").removeClass("flip");
-})
+    $(".game-card-style").off("click");
+    $(".game-card-style").click(function(card){
+        if(busy === false) {
+                $(this).addClass("flip");
+                console.log($(this).attr("name"))
+            
+                
+                if(hasFlipped === true) {
+                    card2 = $(this)
+                    busy = true;
+                    setTimeout(() =>{
+                        busy = false;
+                    }, 1800)
+                    checkForCardMatch()
+                    
+                } else {
+                    hasFlipped = true;
+                    busy = true;
+                    setTimeout(() =>{
+                        busy = false;
+                    }, 300)
+                    card1 = $(this);
+                    card1.off("click");
+                    
+                }
+            console.log(hasFlipped);
+            console.log(card1);
+            console.log(card2);
+            console.log(matchedCards);
+            
+        }
+    });
+        matchedCards= [];
+        card1 = undefined;
+        card2 = undefined;
+        hasFlipped = false;
+});
 
 
 // ---------card flipping ------------
 let hasFlipped = false;
 let card1, card2;
-
-$(".game-card-style").click(function(card){    
-        $(this).addClass("flip");
-        console.log($(this).attr("name"))
-       
-
-        if(hasFlipped === true) {
-            card2 = $(this)
-            checkForCardMatch()
-        } else {
-           hasFlipped = true;
-           card1 = $(this);
-           card1.off("click");
-        }
-   
-    
-    console.log(hasFlipped);
-    console.log(card1);
-    console.log(card2);
-    console.log(matchedCards);
+var busy = false;
+$(".game-card-style").click(function(card){
+    if(busy === false) {
+            $(this).addClass("flip");
+            console.log($(this).attr("name"))
+        
+            
+            if(hasFlipped === true) {
+                card2 = $(this)
+                busy = true;
+                setTimeout(() =>{
+                    busy = false;
+                }, 1800)
+                checkForCardMatch()
+                
+            } else {
+                hasFlipped = true;
+                busy = true;
+                setTimeout(() =>{
+                    busy = false;
+                }, 300)
+                card1 = $(this);
+                card1.off("click");
+                
+            }
+        console.log(hasFlipped);
+        console.log(card1);
+        console.log(card2);
+        console.log(matchedCards);
+        
+    }
 });
 
+// ---------Card Match Logic ------------
 
-function checkForCardMatch(card) {
-    
+function checkForCardMatch(card) { 
     if(card1.attr("name") === card2.attr("name")) {
-        disableCards()
+        console.log(card1.attr("name"));
+        console.log(typeof(card1.attr("name")));
+        checkLose();
         matchedCards.push(card1);
         card1.off("click");
         matchedCards.push(card2);
         card2.off("click");
+        checkVictory();
     } else {
         unflip()
     }
@@ -251,27 +302,45 @@ function unflip(){
             };
         });
         card2.removeClass("flip");
-    }, 1000)
+    }, 700)
 }
 
-function disableCards(){
-
-}
-/*
-function cardMatch(card1, card2) {
-
-}
-
-function cardMisMatch(card1, card2){
-
-}
-
-getCardType(card){
-    return card.lastChildElement.css("background-image");
-}
-*/
-function canBeFlipped(card) {
-    return ;
+function checkLose() {
+   if(card1.attr("name") === "muton" ) {
+        gameLose() 
+    }
+    if(card1.attr("name") === "sectoid") {
+        gameLose() 
+    }
+    if(card1.attr("name") === "chryssalid") {
+        gameLose() 
+    }
 }
 
+function checkVictory() {
+    if(matchedCards.length === soldierNum()) {
+        gameWin();
+    }
+}
 
+function soldierNum() {
+    if(difficulty() === 1){
+        return 14;
+    } else if(difficulty() === 2) {
+        return 12;
+    } else if(difficulty() === 3) {
+        return 10;
+    } else {
+        return 10;
+    };
+}
+
+// ---------Game Win/Lose ------------
+
+function gameLose() {
+    alert("lose")
+}
+
+function gameWin() {
+    alert("win")
+}
