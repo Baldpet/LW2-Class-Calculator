@@ -113,10 +113,10 @@ header {
     transform: scale(1);
 }
 
-.game-card-style:active {
+/*.game-card-style:active {
     transform: scale(.97);
     transition: .8s;
-}
+}*/
 
 .game-card-back {
     position: absolute;
@@ -143,6 +143,10 @@ header {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+}
+
+.game-card-matched {
+
 }
 
 /*  ------------- Soldier/Alien ---------------- */

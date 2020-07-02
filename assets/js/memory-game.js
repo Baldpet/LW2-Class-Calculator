@@ -192,14 +192,15 @@ $(".reset-button").click(function(){
     $(".game-start-container").removeClass("hidden");
     $(".card-container").addClass("hidden");
     $(".game-card-front").removeClass(["soldierA", "soldierB", "soldierC", "soldierD", "soldierE", "soldierF", "soldierG", "muton", "sectoid", "chryssalid"]);
+    $(".game-card-style").removeClass("flip");
 })
 
 
 // ---------card flipping ------------
 let hasFlipped = false;
 let card1, card2;
-$(".game-card-style").click(function(card){
-   // if(canBeFlipped === true) {
+
+$(".game-card-style").click(function(card){    
         $(this).addClass("flip");
         console.log($(this).attr("name"))
        
@@ -210,18 +211,25 @@ $(".game-card-style").click(function(card){
         } else {
            hasFlipped = true;
            card1 = $(this);
+           card1.off("click");
         }
    
-    console.log(matchedCards)
-    console.log(hasFlipped)
-    console.log(card1)
-    console.log(card2)
+    
+    console.log(hasFlipped);
+    console.log(card1);
+    console.log(card2);
+    console.log(matchedCards);
 });
 
 
 function checkForCardMatch(card) {
+    
     if(card1.attr("name") === card2.attr("name")) {
         disableCards()
+        matchedCards.push(card1);
+        card1.off("click");
+        matchedCards.push(card2);
+        card2.off("click");
     } else {
         unflip()
     }
@@ -231,6 +239,17 @@ function checkForCardMatch(card) {
 function unflip(){
     setTimeout(function(){
         card1.removeClass("flip");
+        card1.on("click", function() {
+            $(this).addClass("flip");  
+            if(hasFlipped === true) {
+                card2 = $(this)
+                checkForCardMatch()
+            } else {
+                hasFlipped = true;
+                card1 = $(this);
+                card1.off("click");
+            };
+        });
         card2.removeClass("flip");
     }, 1000)
 }
@@ -250,9 +269,9 @@ function cardMisMatch(card1, card2){
 getCardType(card){
     return card.lastChildElement.css("background-image");
 }
-
+*/
 function canBeFlipped(card) {
-    return !this.busy && !this.matchedCards.includes(card) && !==this.cardToCheck;
-}*/
+    return ;
+}
 
 
