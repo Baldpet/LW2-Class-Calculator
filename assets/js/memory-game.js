@@ -1,5 +1,6 @@
 const soldierDeck = ["soldierA","soldierB","soldierC", "soldierD", "soldierE", "soldierF", "soldierG"];
 const alienDeck = ["muton", "chryssalid", "sectoid"];
+let matchedCards = []
 
 // --------- Fisher-Yates shuffle ------------
 
@@ -182,9 +183,7 @@ $(".start").click(function(){
     $(".card-container").removeClass("hidden");
     newGame();
     startTimer();
-    let matchedCards = [];
-    let cardToCheck = null;
-    
+   
 })
 
 // ---------reset game ------------
@@ -197,26 +196,49 @@ $(".reset-button").click(function(){
 
 
 // ---------card flipping ------------
-
+let hasFlipped = false;
+let card1, card2;
 $(".game-card-style").click(function(card){
    // if(canBeFlipped === true) {
         $(this).addClass("flip");
-        
-
         console.log($(this).attr("name"))
-    /*   if(this.cardToCheck) {
-           this.checkForCardMatch(card);
-        } else {
-            this.cardToCheck = card
-        }
+       
 
-    }   */
+        if(hasFlipped === true) {
+            card2 = $(this)
+            checkForCardMatch()
+        } else {
+           hasFlipped = true;
+           card1 = $(this);
+        }
+   
+    console.log(matchedCards)
+    console.log(hasFlipped)
+    console.log(card1)
+    console.log(card2)
 });
 
-/*function checkForCardMatch(card) {
 
+function checkForCardMatch(card) {
+    if(card1.attr("name") === card2.attr("name")) {
+        disableCards()
+    } else {
+        unflip()
+    }
+    hasFlipped = false;
 }
 
+function unflip(){
+    setTimeout(function(){
+        card1.removeClass("flip");
+        card2.removeClass("flip");
+    }, 1000)
+}
+
+function disableCards(){
+
+}
+/*
 function cardMatch(card1, card2) {
 
 }
