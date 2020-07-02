@@ -155,9 +155,10 @@ function newGame(){
     $(".game-card-front").each(function(i){
         $(this).addClass(deck[i]);
     });
-   
 
-
+    $(".game-card-style").each(function(i){
+        $(this).attr("name", deck[i]);
+    }); 
 }
 
 // ---------timer & best time ------------
@@ -181,6 +182,8 @@ $(".start").click(function(){
     $(".card-container").removeClass("hidden");
     newGame();
     startTimer();
+    let matchedCards = [];
+    let cardToCheck = null;
     
 })
 
@@ -195,8 +198,39 @@ $(".reset-button").click(function(){
 
 // ---------card flipping ------------
 
-$(".game-card-style").click(function(){
-    $(this).toggleClass("flip");
+$(".game-card-style").click(function(card){
+   // if(canBeFlipped === true) {
+        $(this).addClass("flip");
+        
+
+        console.log($(this).attr("name"))
+    /*   if(this.cardToCheck) {
+           this.checkForCardMatch(card);
+        } else {
+            this.cardToCheck = card
+        }
+
+    }   */
 });
+
+/*function checkForCardMatch(card) {
+
+}
+
+function cardMatch(card1, card2) {
+
+}
+
+function cardMisMatch(card1, card2){
+
+}
+
+getCardType(card){
+    return card.lastChildElement.css("background-image");
+}
+
+function canBeFlipped(card) {
+    return !this.busy && !this.matchedCards.includes(card) && !==this.cardToCheck;
+}*/
 
 
