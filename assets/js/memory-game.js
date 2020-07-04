@@ -181,6 +181,7 @@ function startTimer() {
 $(".start").click(function(){
     $(".game-start-container").addClass("hidden");
     $(".card-container").removeClass("hidden");
+    removeFixedTop();
     newGame();
     startTimer();
     //flipCard();
@@ -192,6 +193,7 @@ $(".start").click(function(){
 $(".reset-button").click(function(){
     $(".game-start-container").removeClass("hidden");
     $(".card-container").addClass("hidden");
+    addFixedTop();
     $(".game-card-front").removeClass(["soldierA", "soldierB", "soldierC", "soldierD", "soldierE", "soldierF", "soldierG", "muton", "sectoid", "chryssalid"]);
     $(".game-card-style").removeClass("flip");
     $(".game-card-style").off("click");
@@ -343,4 +345,16 @@ function gameLose() {
 
 function gameWin() {
     alert("win")
+}
+
+// ----------Removing/Adding Fixed Top Nav-------------------
+
+function removeFixedTop() {
+    $(".navbar-dark").removeClass("fixed-top");
+    $("#container-intro").removeClass("container-game-intro");
+}
+
+function addFixedTop() {
+    $(".navbar-dark").addClass("fixed-top");
+    $("#container-intro").addClass("container-game-intro");
 }
