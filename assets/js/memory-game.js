@@ -165,7 +165,7 @@ function newGame(){
 // ---------timer & best time ------------
 
 function startTimer() {
-     var sec = 0;
+    var sec = 0;
     function pad ( val ) { return val > 9 ? val : "0" + val; }
     setInterval( function(){
         $("#seconds").html(pad(++sec%60));
@@ -174,7 +174,21 @@ function startTimer() {
 
 }
 
+function stopTimer() {
+
+}
+
 // ---------attempt counter ------------
+let counter = 0;
+function attemptCounter(boolean) {
+    counter = counter +1;
+    $(".attempt-counter").html(counter);
+}
+
+function resetCounter() {
+    counter = 0;
+    $(".attempt-counter").html(counter);
+}
 
 // ---------start game ------------
 
@@ -228,6 +242,7 @@ $(".reset-button").click(function(){
             
         }
     });
+    stopTimer();
         matchedCards= [];
         card1 = undefined;
         card2 = undefined;
@@ -308,7 +323,7 @@ function unflip(){
 }
 
 function checkLose() {
-   if(card1.attr("name") === "muton" ) {
+    if(card1.attr("name") === "muton" ) {
         gameLose() 
     }
     if(card1.attr("name") === "sectoid") {
@@ -341,10 +356,12 @@ function soldierNum() {
 
 function gameLose() {
     alert("lose")
+    attemptCounter();
 }
 
 function gameWin() {
     alert("win")
+    resetCounter();
 }
 
 // ----------Removing/Adding Fixed Top Nav-------------------
