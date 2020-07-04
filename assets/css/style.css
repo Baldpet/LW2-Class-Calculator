@@ -22,7 +22,12 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: rgba(245, 245, 245);
+}
+
+.footer{
+    background-color: #343434;
+    color: white;
 }
 
 .break {
@@ -31,6 +36,17 @@ body {
 
 .hidden {
     display: none;
+}
+
+.button-style {
+    height: 3rem;
+    width: 12rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    border: 0.1rem #10b3d8 solid;
+    border-radius: 0px 10px;
+    background-color: #343a40;
 }
 
 /*  ------------- Colors ---------------- */
@@ -84,10 +100,12 @@ header {
 /*  ------------- Game Styles ---------------- */
 
 .game-container {
+    background-color: rgba(245, 245, 245, 0.5) ;
     height: 80vh;
     width: 100%;
     border: 1px solid;
 }
+
 
 .game-start {
     justify-content: center;
@@ -105,12 +123,14 @@ header {
 
 .game-card-style {
     margin: auto;
-    height: 80%;
-    width: 80%;
-    background-color: grey; 
+    height: 95%;
+    width: 95%;
+    background-color: #343a40;
+    border-radius: 10px 10px;
     transform-style: preserve-3d ;
     transition: 0.8s;
     transform: scale(1);
+    
 }
 
 /*.game-card-style:active {
@@ -128,7 +148,8 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px red solid;
+    border: 0.2rem #10b3d8 solid;
+    border-radius: 10px 10px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; 
 }
@@ -139,10 +160,12 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px red solid;
+    border: 0.2rem #10b3d8 solid;
+    border-radius: 10px 10px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+    
 }
 
 .game-card-matched {
@@ -151,88 +174,87 @@ header {
 
 /*  ------------- Soldier/Alien ---------------- */
 
-.soldierA {
-    background-image: url(../images/soldier-1.png);
-    background-color: blue;
+.soldierA, .soldierB, .soldierC, .soldierD, .soldierE, .soldierF, .soldierG {
+    background-color: #3a8238;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+.soldierA {
+    background-image: url(../images/soldier-1.png);
+    
 }
 
 .soldierB {
     background-image: url(../images/soldier-2.png);
-    background-color: blue;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 .soldierC {
     background-image: url(../images/soldier-3.png);
-    background-color: blue;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+
 }
 
 .soldierD {
     background-image: url(../images/soldier-4.png);
-    background-color: blue;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+
 }
 
 .soldierE {
     background-image: url(../images/soldier-5.png);
-    background-color: blue;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+
 }
 
 .soldierF {
     background-image: url(../images/soldier-6.png);
-    background-color: blue;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+
 }
 
 .soldierG {
     background-image: url(../images/soldier-7.png);
-    background-color: blue;
+
+}
+
+.muton, .chryssalid, .sectoid {
+    background-color: #b32121;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: center; 
 }
 
 .muton {
-    background-image: url(../images/muton.png);
-    background-color: red;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-image: url(../images/muton.png); 
 }
 
 .chryssalid {
-    background-image: url(../images/chryssalid.png);
-    background-color: red;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-image: url(../images/chryssalid.png);  
 }
 
 .sectoid {
     background-image: url(../images/sectoid.png);
-    background-color: red;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 /*  ------------- Game Card Flip ---------------- */
 
 .flip {
     transform:  rotateY(180deg)
+}
+
+/*  ------------- Reset Button ---------------- */
+
+.reset-container-style {
+    background: transparent;
+}
+
+.reset-button-col {
+    text-align: center;
+}
+
+/*  ------------- Timers ---------------- */
+
+#timer, #best-time {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }

@@ -163,19 +163,34 @@ function newGame(){
 }
 
 // ---------timer & best time ------------
+let sec = 0;
+let timer;
+let time;
 
 function startTimer() {
-    var sec = 0;
-    function pad ( val ) { return val > 9 ? val : "0" + val; }
-    setInterval( function(){
-        $("#seconds").html(pad(++sec%60));
-        $("#minutes").html(pad(parseInt(sec/60,10)));
-    }, 1000);
+    timer = setInterval(function(){
+        sec++;
+        $("#timer").html(sec);
+    }, 1000)
 
 }
 
 function stopTimer() {
+    time = sec;
+    sec = 0;
+    clearInterval(timer);
+}
 
+function bestTime() {
+    if(time < localStorage.getItem("time")) {
+        localStorage.setItem("time", time);
+        $("#best-time").html(time);
+    } else if(time >= localStorage.getItem("time")) {
+
+    } else {
+        localStorage.setItem("time", time);
+        $("#best-time").html(time);
+    }
 }
 
 // ---------attempt counter ------------
@@ -357,11 +372,14 @@ function soldierNum() {
 function gameLose() {
     alert("lose")
     attemptCounter();
+    stopTimer();
 }
 
 function gameWin() {
     alert("win")
     resetCounter();
+    stopTimer();
+    bestTime();
 }
 
 // ----------Removing/Adding Fixed Top Nav-------------------
