@@ -307,6 +307,8 @@ function reset() {
     $(".game-card-front").removeClass(["soldierA", "soldierB", "soldierC", "soldierD", "soldierE", "soldierF", "soldierG", "muton", "sectoid", "chryssalid"]);
     $(".game-card-style").removeClass("flip");
     $(".game-card-style").off("click");
+    $(".lose-container").fadeOut("fast");
+    $(".win-container").fadeOut("fast");
     $(".game-card-style").click(function(card){
         if(busy === false) {
                 $(this).addClass("flip");
@@ -455,13 +457,13 @@ function soldierNum() {
 // ---------Game Win/Lose ------------
 
 function gameLose() {
-    alert("lose")
+    $('.lose-container').fadeIn("slow");
     attemptCounter();
     stopTimer();
 }
 
 function gameWin() {
-    alert("win")
+    $(".win-container").fadIn("slow");
     resetCounter();
     stopTimer();
     bestTime();

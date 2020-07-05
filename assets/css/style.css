@@ -111,6 +111,9 @@ header {
     border: 1px solid;
 }
 
+.card-container {
+    position: relative;
+}
 
 .game-start {
     justify-content: center;
@@ -122,10 +125,24 @@ header {
     height: 25%;
 }
 
-.game-col {
-    
+/*  ------------- Win/Loss Overlay ---------------- */
+
+.win-container,
+.lose-container {
+    position: absolute;
+    top: 0;
+    left: 0; 
 }
 
+.overlay-box-style {
+    opacity: 1.0;
+    background-color: #343a40;
+    color: #ffffff;
+    border: 0.2rem #10b3d8 solid;
+    border-radius: 0px 15px;
+}
+
+/*  ------------- Card Styles ---------------- */
 .game-card-style {
     margin: auto;
     height: 95%;
@@ -137,11 +154,6 @@ header {
     transform: scale(1);
     
 }
-
-/*.game-card-style:active {
-    transform: scale(.97);
-    transition: .8s;
-}*/
 
 .game-card-back {
     position: absolute;
@@ -173,9 +185,6 @@ header {
     
 }
 
-.game-card-matched {
-
-}
 
 /*  ------------- Soldier/Alien ---------------- */
 
