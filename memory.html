@@ -76,7 +76,8 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                Changing difficulty will reset the game.
+                                <p>Changing difficulty will reset the game.</p>
+                                <p>Please press close if you would like to continue your game.</p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary no-reset" data-dismiss="modal" >Close</button>
@@ -88,7 +89,7 @@
             </div>
 <!--------------------Game Attempts and Timers-------------------------->
             <div class="col-6">
-                <h4>Number of attempts taken</h4>
+                <h4>Attempts since last win</h4>
                 <p class="attempt-counter">0</p>
             </div>
             <div class="col-3">
@@ -102,10 +103,9 @@
     
 <!--------------------Game-------------------------->
     <div class="container game-container game-start-container">
-        <div class="row">
+        <div class="row h-100 justify-content-center align-items-center">
             <div class="col game-start">
-                <p>click here to start the game</p>
-                <button class="start">Click me</button>
+                <button class="button-style start">Start Game</button>
             </div>
         </div>
     </div>
@@ -217,11 +217,14 @@
         <!--------------------Win overlay-------------------------->
         <div class="container game-container win-container hidden">
             <div class="row h-100 justify-content-center align-items-center">
-                <div class="col-8">
+                <div class="col-10 col-md-8">
                     <div class="overlay-box-style text-center">
+                        <div class="win-image-container">
+                            <img class="win-image" src="assets/images/hero-image.png" alt="Xcom squad">
+                        </div>
                         <h3>Congratulations commander!</h3>
                         <p>You have successfully extracted your squad from the mission, why not try at a harder difficulty by increasing the stars.</p>
-                        <p>Alternatively you can reset the game by clicking anywhere.</p>
+                        <p>Alternatively, you can reset the game by clicking anywhere.</p>
                     </div>
                 </div>
             </div>
@@ -231,9 +234,12 @@
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="col-8">
                     <div class="overlay-box-style text-center">
-                        <h3>All soldiers were lost!</h3>
-                        <p>If we are going to win this war we can't afford to keep taking losses like this, click anywhere to reset the game.</p>
-                        <p>Alternatively you can lower the difficulty by lowering the star count.</p>
+                        <div class="win-image-container">
+                            <img class="win-image" src="assets/images/skulls2_faded.png" alt="Alien">
+                        </div>
+                        <h3>Mission failed!</h3>
+                        <p>Commander if we are going to win this war we can't afford to keep taking losses like this. </p>
+                        <p>Click anywhere to reset the game. Alternatively, you can lower the difficulty by lowering the star count.</p>
                     </div>
                 </div>
             </div>

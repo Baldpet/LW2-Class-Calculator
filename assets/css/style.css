@@ -136,10 +136,22 @@ header {
 
 .overlay-box-style {
     opacity: 1.0;
+    padding: 10px;
     background-color: #343a40;
     color: #ffffff;
     border: 0.2rem #10b3d8 solid;
     border-radius: 0px 15px;
+}
+
+.win-image-container{
+    width: 100%;
+    justify-content: center;
+}
+
+.win-image {
+    max-width: 70%;
+    height: auto;
+    margin: auto;
 }
 
 /*  ------------- Card Styles ---------------- */
