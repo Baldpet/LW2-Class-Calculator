@@ -28,6 +28,7 @@ body {
 .footer{
     background-color: #343434;
     color: white;
+    text-align: center;
 }
 
 .break {
@@ -283,4 +284,25 @@ header {
     font-weight: bold;
     text-align: center;
     margin-bottom: 0.5rem;
+}
+
+/*  ------------- Footer ---------------- */
+
+.footer-col{
+    margin: 20px;
+}
+
+.footer-link{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.youtube {
+    color: #c4302b;
+    margin-right: 25px;
+}
+
+.twitch {
+    color: #6441a5;
+    margin-right: 25px;
 }
