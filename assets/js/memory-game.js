@@ -2,6 +2,11 @@ const soldierDeck = ["soldierA","soldierB","soldierC", "soldierD", "soldierE", "
 const alienDeck = ["muton", "chryssalid", "sectoid"];
 let matchedCards = []
 
+if(localStorage.getItem("timeOne") === null){
+    $("#best-time").html("0");
+} else {
+    $("#best-time").html(localStorage.getItem("timeOne"));
+}
 // --------- Fisher-Yates shuffle ------------
 
 function shuffle(array) {
@@ -45,7 +50,6 @@ $(".fa-star").click(function(){
         $("#star-2").addClass("star-active");
         $("#star-3").addClass("star-active");
         $(this).addClass("star-active");
-        console.log(starSwitch);
     }
 })
 
@@ -73,8 +77,36 @@ $(".no-reset").click(function(){
 
 $("#resetGame").click(function(){
     reset();
-
+    starBestTime();
 })
+
+function starBestTime() {
+    if(difficulty() === 1){
+        if(localStorage.getItem("timeOne") === null){
+            $("#best-time").html("0")
+        } else {
+            $("#best-time").html(localStorage.getItem("timeOne"));
+        }     
+    } else if(difficulty() === 2){
+        if(localStorage.getItem("timeTwo") === null){
+            $("#best-time").html("0")
+        } else {
+            $("#best-time").html(localStorage.getItem("timeTwo"));
+        }
+    } else if(difficulty() === 3){
+        if(localStorage.getItem("timeThree") === null){
+            $("#best-time").html("0")
+        } else {
+            $("#best-time").html(localStorage.getItem("timeThree"));
+        }
+    } else if(difficulty() === 4){
+        if(localStorage.getItem("timeFour") === null){
+            $("#best-time").html("0")
+        } else {
+            $("#best-time").html(localStorage.getItem("timeFour"));
+        }
+    }
+}
 
 // ---------Card Drawing and Deck Structure ------------
 
@@ -221,56 +253,56 @@ function bestTime() {
         bestTimeTwo();
     } else if(difficulty() === 3) {
         bestTimeThree();
-    } else {
+    } else if(difficulty() === 4){
         bestTimeFour();
     };
 }
 
 function bestTimeOne() {
-    if(time < localStorage.getItem("time1")) {
-        localStorage.setItem("time1", time);
+    if(time < localStorage.getItem("timeOne")) {
+        localStorage.setItem("timeOne", time);
         $("#best-time").html(time);
-    } else if(time >= localStorage.getItem("time1")) {
-
-    } else {
-        localStorage.setItem("time1", time);
+        console.log("working");
+    } else if(localStorage.getItem("timeOne") === null){
+        localStorage.setItem("timeOne", time);
         $("#best-time").html(time);
+        
     }
 }
 
 function bestTimeTwo() {
-    if(time < localStorage.getItem("time2")) {
-        localStorage.setItem("time2", time);
+    if(time < localStorage.getItem("timeTwo")) {
+        localStorage.setItem("timeTwo", time);
         $("#best-time").html(time);
-    } else if(time >= localStorage.getItem("time2")) {
-
-    } else {
-        localStorage.setItem("time2", time);
-        $("#best-time2").html(time);
+        console.log("working");
+    } else if(localStorage.getItem("timeTwo") === null){
+        localStorage.setItem("timeTwo", time);
+        $("#best-time").html(time);
+        
     }
 }
 
 function bestTimeThree() {
-    if(time < localStorage.getItem("time3")) {
-        localStorage.setItem("time3", time);
+    if(time < localStorage.getItem("timeThree")) {
+        localStorage.setItem("timeThree", time);
         $("#best-time").html(time);
-    } else if(time >= localStorage.getItem("time3")) {
-
-    } else {
-        localStorage.setItem("time3", time);
+        console.log("working");
+    } else if(localStorage.getItem("timeThree") === null){
+        localStorage.setItem("timeThree", time);
         $("#best-time").html(time);
+        console.log("working3");
     }
 }
 
 function bestTimeFour() {
-    if(time < localStorage.getItem("time4")) {
-        localStorage.setItem("time4", time);
+    if(time < localStorage.getItem("timeFour")) {
+        localStorage.setItem("timeFour", time);
         $("#best-time").html(time);
-    } else if(time >= localStorage.getItem("time4")) {
-
-    } else {
-        localStorage.setItem("time4", time);
+        console.log("working");
+    } else if(localStorage.getItem("timeFour") === null){
+        localStorage.setItem("timeFour", time);
         $("#best-time").html(time);
+        
     }
 }
 
@@ -311,10 +343,7 @@ function reset() {
     $(".win-container").fadeOut("fast");
     $(".game-card-style").click(function(card){
         if(busy === false) {
-                $(this).addClass("flip");
-                console.log($(this).attr("name"))
-            
-                
+                $(this).addClass("flip");         
                 if(hasFlipped === true) {
                     card2 = $(this)
                     busy = true;
@@ -333,10 +362,6 @@ function reset() {
                     card1.off("click");
                     
                 }
-            console.log(hasFlipped);
-            console.log(card1);
-            console.log(card2);
-            console.log(matchedCards);
             
         }
     });
@@ -359,9 +384,6 @@ var busy = false;
 $(".game-card-style").click(function(card){
     if(busy === false) {
             $(this).addClass("flip");
-            console.log($(this).attr("name"))
-        
-            
             if(hasFlipped === true) {
                 card2 = $(this)
                 busy = true;
@@ -380,10 +402,6 @@ $(".game-card-style").click(function(card){
                 card1.off("click");
                 
             }
-        console.log(hasFlipped);
-        console.log(card1);
-        console.log(card2);
-        console.log(matchedCards);
         
     }
 });
@@ -392,8 +410,6 @@ $(".game-card-style").click(function(card){
 
 function checkForCardMatch(card) { 
     if(card1.attr("name") === card2.attr("name")) {
-        console.log(card1.attr("name"));
-        console.log(typeof(card1.attr("name")));
         checkLose();
         matchedCards.push(card1);
         card1.off("click");
@@ -463,7 +479,8 @@ function gameLose() {
 }
 
 function gameWin() {
-    $(".win-container").fadIn("slow");
+    $(".win-container").fadeIn("slow");
+    console.log(difficulty)
     resetCounter();
     stopTimer();
     bestTime();
