@@ -339,6 +339,8 @@ function reset() {
     $(".game-card-front").removeClass(["soldierA", "soldierB", "soldierC", "soldierD", "soldierE", "soldierF", "soldierG", "muton", "sectoid", "chryssalid"]);
     $(".game-card-style").removeClass("flip");
     $(".game-card-style").off("click");
+    $(".win-container").off("click");
+    $(".lose-container").off("click");
     $(".lose-container").fadeOut("fast");
     $(".win-container").fadeOut("fast");
     $(".game-card-style").click(function(card){
@@ -390,8 +392,7 @@ $(".game-card-style").click(function(card){
                 setTimeout(() =>{
                     busy = false;
                 }, 1800)
-                checkForCardMatch()
-                
+                checkForCardMatch()             
             } else {
                 hasFlipped = true;
                 busy = true;
@@ -476,6 +477,11 @@ function gameLose() {
     $('.lose-container').fadeIn("slow");
     attemptCounter();
     stopTimer();
+    setTimeout(() => { 
+        $(".lose-container").click(function(){
+            reset();
+        })
+    }, 1500);
 }
 
 function gameWin() {
@@ -484,6 +490,11 @@ function gameWin() {
     resetCounter();
     stopTimer();
     bestTime();
+    setTimeout(() => { 
+        $(".win-container").click(function(){
+            reset();
+        })
+    }, 1500);
 }
 
 // ----------Removing/Adding Fixed Top Nav-------------------
