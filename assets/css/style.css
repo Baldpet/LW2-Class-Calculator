@@ -75,7 +75,25 @@ header {
     padding: 0;
 }
 
+/*  ------------- Talents ---------------- */
 
+.talents-container {
+    text-align: center;
+    opacity: 0.7;
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.talents-box {
+    border-bottom: 1px #83c0ce solid;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.talents-icon {
+    height: 45px;
+    width: 45px;
+}
 
 /*  ------------- Game Intro ---------------- */
 
