@@ -82,6 +82,11 @@ header {
     margin-top: 85px;
 }
 
+.star-button-style {
+    border: 0px;
+    background-color: rgb(245,245,245); 
+}
+
 .stars {
     text-align: center;
 }

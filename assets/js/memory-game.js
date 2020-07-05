@@ -20,27 +20,60 @@ function shuffle(array) {
 }
 
 // ---------Difficulty Switching ------------
+let starSwitch = 0;
 
 $(".fa-star").click(function(){
     if($(this).is("#star-1")){
+        starSwitch = $(".star-active").length;
         $(".fa-star").removeClass("star-active");
         $(this).addClass("star-active");
     } else if($(this).is("#star-2")){
+        starSwitch = $(".star-active").length;
         $(".fa-star").removeClass("star-active");
         $("#star-1").addClass("star-active");
         $(this).addClass("star-active");
     } else if($(this).is("#star-3")){
+        starSwitch = $(".star-active").length;
         $(".fa-star").removeClass("star-active");
         $("#star-1").addClass("star-active");
         $("#star-2").addClass("star-active");
         $(this).addClass("star-active");
     } else {
+        starSwitch = $(".star-active").length;
         $(".fa-star").removeClass("star-active");
         $("#star-1").addClass("star-active");
         $("#star-2").addClass("star-active");
         $("#star-3").addClass("star-active");
         $(this).addClass("star-active");
+        console.log(starSwitch);
     }
+})
+
+$(".no-reset").click(function(){
+    if(starSwitch === 1){
+        $(".fa-star").removeClass("star-active");
+        $("#star-1").addClass("star-active");
+    } else if (starSwitch === 2){
+        $(".fa-star").removeClass("star-active");
+        $("#star-1").addClass("star-active");
+        $("#star-2").addClass("star-active");
+    } else if (starSwitch === 3){
+        $(".fa-star").removeClass("star-active");
+        $("#star-1").addClass("star-active");
+        $("#star-2").addClass("star-active");
+        $("#star-3").addClass("star-active");
+    } else if (starSwitch === 4){
+        $(".fa-star").removeClass("star-active");
+        $("#star-1").addClass("star-active");
+        $("#star-2").addClass("star-active");
+        $("#star-3").addClass("star-active");
+        $("#star-4").addClass("star-active");
+    }
+})
+
+$("#resetGame").click(function(){
+    reset();
+
 })
 
 // ---------Card Drawing and Deck Structure ------------
@@ -182,13 +215,61 @@ function stopTimer() {
 }
 
 function bestTime() {
-    if(time < localStorage.getItem("time")) {
-        localStorage.setItem("time", time);
+    if(difficulty() === 1){
+        bestTimeOne();
+    } else if(difficulty() === 2) {
+        bestTimeTwo();
+    } else if(difficulty() === 3) {
+        bestTimeThree();
+    } else {
+        bestTimeFour();
+    };
+}
+
+function bestTimeOne() {
+    if(time < localStorage.getItem("time1")) {
+        localStorage.setItem("time1", time);
         $("#best-time").html(time);
-    } else if(time >= localStorage.getItem("time")) {
+    } else if(time >= localStorage.getItem("time1")) {
 
     } else {
-        localStorage.setItem("time", time);
+        localStorage.setItem("time1", time);
+        $("#best-time").html(time);
+    }
+}
+
+function bestTimeTwo() {
+    if(time < localStorage.getItem("time2")) {
+        localStorage.setItem("time2", time);
+        $("#best-time").html(time);
+    } else if(time >= localStorage.getItem("time2")) {
+
+    } else {
+        localStorage.setItem("time2", time);
+        $("#best-time2").html(time);
+    }
+}
+
+function bestTimeThree() {
+    if(time < localStorage.getItem("time3")) {
+        localStorage.setItem("time3", time);
+        $("#best-time").html(time);
+    } else if(time >= localStorage.getItem("time3")) {
+
+    } else {
+        localStorage.setItem("time3", time);
+        $("#best-time").html(time);
+    }
+}
+
+function bestTimeFour() {
+    if(time < localStorage.getItem("time4")) {
+        localStorage.setItem("time4", time);
+        $("#best-time").html(time);
+    } else if(time >= localStorage.getItem("time4")) {
+
+    } else {
+        localStorage.setItem("time4", time);
         $("#best-time").html(time);
     }
 }
@@ -219,7 +300,7 @@ $(".start").click(function(){
 
 // ---------reset game ------------
 
-$(".reset-button").click(function(){
+function reset() {
     $(".game-start-container").removeClass("hidden");
     $(".card-container").addClass("hidden");
     addFixedTop();
@@ -262,6 +343,10 @@ $(".reset-button").click(function(){
         card1 = undefined;
         card2 = undefined;
         hasFlipped = false;
+}
+
+$(".reset-button").click(function(){
+    reset();
 });
 
 
