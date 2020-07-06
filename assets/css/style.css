@@ -94,6 +94,10 @@ header {
 
 /*  ------------- Class Intro and Selection ---------------- */
 
+.selector-col {
+    text-align: center;
+}
+
 .class-selector{
     position: relative;
     height: 60px;
