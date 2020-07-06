@@ -12,6 +12,11 @@ h5 {
     text-align: center;
 }
 
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 p {
     font-family: 'Lato', sans-serif;
 }
@@ -152,6 +157,10 @@ header {
 .talents-icon {
     height: 45px;
     width: 45px;
+}
+
+.talents-active {
+    border: 4px yellow ridge;
 }
 
 /*  ------------- Game Intro ---------------- */
@@ -382,4 +391,28 @@ header {
 .twitch {
     color: #6441a5;
     margin-right: 25px;
+}
+
+/*  ------------- Youtube ---------------- */
+
+.youtube-video {
+    height: 360px;
+    width: 640px;
+}
+
+@media only screen and (max-width: 768px) {
+    .youtube-video {
+    height: 225px;
+    width: 400px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+    .youtube-video {
+    height: 202.5px;
+    width: 360px;
+}
+    .youtube-col{
+        padding-left: 0;
+    }
 }

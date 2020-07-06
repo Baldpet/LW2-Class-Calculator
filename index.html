@@ -71,44 +71,44 @@
         </div>
         <div class="row">
             <div class="col-6 col-md-3">
-                <div class="class-selector">
+                <div class="class-selector talents-active" id="assault">
                     <p>Assault</p>
                 </div>
             </div>
             <div class="col-6 col-md-3">
-                <div class="class-selector">
-                    <p>Genadier</p>
+                <div class="class-selector" id="grenadier">
+                    <p>Grenadier</p>
                 </div>
             </div>
             <div class="col-6 col-md-3">
-                <div class="class-selector">
+                <div class="class-selector" id="gunner">
                     <p>Gunner</p>
                 </div>
             </div>
             <div class="col-6 col-md-3">
-                <div class="class-selector">
+                <div class="class-selector" id="ranger">
                     <p>Ranger</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-6 col-md-3">
-                <div class="class-selector">
+                <div class="class-selector" id="sharpshooter">
                     <p>Sharpshooter</p>
                 </div>
             </div>
             <div class="col-6 col-md-3">
-                <div class="class-selector">
+                <div class="class-selector" id="shinobi">
                     <p>Shinobi</p>
                 </div>
             </div>
             <div class="col-6 col-md-3">
-                <div class="class-selector">
+                <div class="class-selector" id="specialist">
                     <p>Specialist</p>
                 </div>
             </div>
             <div class="col-6 col-md-3">
-                <div class="class-selector">
+                <div class="class-selector" id="technical">
                     <p>Technical</p>
                 </div>
             </div>
@@ -116,21 +116,24 @@
     </div>
     <div class="break"></div>
 <!--------------------Class Information/Builds-------------------------->
-    <div class="container class-info-container">
+    <div class="container class-info-container assault-talents">
         <div class="row">
             <div class="col">
                 <h2>Assault</h2>
                 <div class="box-style">
-                    <p>Some information on the class itself when selected and what it is usually used for. This will change dependent on the class selected above.</p>
+                    <p>Assualts specialise in dealing high amounts of damage with their primary weapon, which is a shotgun. They are experts in breaking through the enemy lines and creating flanks.</p>
+                    <p>Assaults are also able to stun the enemies with their secondary weapon the Arc Pulser. The Arc Pulser is able to deal damage to robotic enemies if specced woth certain talents.</p>
+                    <p>If you are new to the game or Long War 2 why not try one of the prebuilt talent builds.</p>
                 </div>
             </div>
         </div>
         <div class="row">
+            
             <div class="col-12 col-md-6 prebuild-button-col">
-                <button class="button-style ">Button</button>
+                <button class="button-style ">Pre-built talents</button>
             </div>
             <div class="col-12 col-md-6 prebuild-button-col">
-                <button class="button-style">Button</button>
+                <button class="button-style">Pre-built talents</button>
             </div>
         </div>
     </div>
@@ -148,143 +151,256 @@
             </div>
             <div class="col-3 talents-box">
                 <div>
-                    <img class="talents-icon" src="assets/images/soldier-talents/assault/UIPerk_runandgun.png" alt="Run and Gun Icon">
+                    <img class="talents-icon talents-active" src="assets/images/soldier-talents/assault/UIPerk_runandgun.png" alt="Run and Gun Icon">
+                    <p>Run and Gun</p>
                 </div>
-                <p>Info on Icon</p>
+                <div>
+                    <p>Take an action after dashing</p>
+                </div>
             </div>
             <div class="col-3 talents-box">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+                <div>
+                    <img class="talents-icon talents-active" src="assets/images/soldier-talents/assault/LW_AbilityArcthrowerStun.png" alt="Stun Icon">
+                    <p>Stun</p>
+                </div>
+                <div>
+                    <p>Fire your Arc Thrower to incapacitate a target</p>
+                </div>
             </div>
             <div class="col-3 talents-box">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+                <div></div>
+                <p></p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <img src="assets/images/soldier-ranks/XCOM2_rank_lieutenant.png" alt="Lance Corporal rank symbol">
+            <div class="col-3 talents-box">
+                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_lieutenant.png" alt="Lance Corporal rank symbol">
                 <p>Lance Corporal</p>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilitySlugShot.png" alt="Slug Shot Icon">
+                    <p>Slug Shot</p>
+                </div>
+                <div>
+                    <p>Special shot for primary weapon shotguns only: Fire a shot that pierces two armor and has no range penalties. Uses 2 ammo. Three turn cooldown</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityElectroshock.png" alt="Electroshock Icon">
+                    <p>Electro Shock</p>
+                </div>
+                <div>
+                    <p>Your arc thrower disorients the target when it misses.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/UIPerk_lightningreflexes.png" alt="Lightening Reflexes Icon">
+                    <p>Lightning Reflexes</p>
+                </div>
+                <div>
+                    <p>Reaction fire shots against you have a significantly decreased chance to hit. The bonus goes down with each additional reaction shot you face.</p>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <img src="assets/images/soldier-ranks/XCOM2_rank_sergeant.png" alt="Corporal rank symbol">
+            <div class="col-3 talents-box">
+                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_sergeant.png" alt="Corporal rank symbol">
                 <p>Corporal</p>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityStreetSweeper.png" alt="Trench Gun Icon">
+                    <p>Trench Gun</p>
+                </div>
+                <div>
+                    <p>Special shot for primary-weapon shotguns only: Fire a short-range cone-based attack at nearby targets. Three-turn cooldown.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityEMPulser.png" alt="Arc Pulser Icon">
+                    <p>Arc Pulser</p>
+                </div>
+                <div>
+                    <p>Fire your Arc Thrower to incapacitate a target and damage mechanical enemies.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityCloseAndPersonal.png" alt="Close and Personal Icon">
+                    <p>Close and Personal</p>
+                </div>
+                <div>
+                    <p>Confers +30 critical chance against adjacent targets. The bonus declines with distance from the target.</p>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <img src="assets/images/soldier-ranks/XCOM2_rank_captain.png" alt="Sergeant rank symbol">
+            <div class="col-3 talents-box">
+                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_captain.png" alt="Sergeant rank symbol">
                 <p>Sergeant</p>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityKillerInstinct.png" alt="Killer Instinct Icon">
+                    <p>Killer Instinct</p>
+                </div>
+                <div>
+                    <p>Activating Run & Gun grants +50% critical damage for the rest of the turn.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityStunGunner.png" alt="Stun Gunner Icon">
+                    <p>Stun Gunner</p>
+                </div>
+                <div>
+                    <p>Your Arc Thrower now has a bonus to hit.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityFortify.png" alt="Fortify Icon">
+                    <p>Fortify</p>
+                </div>
+                <div>
+                    <p>Activate to grant +20 defense until the beginning of the next turn. Does not cost an action. Has a 5-turn cooldown.</p>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <img src="assets/images/soldier-ranks/XCOM2_rank_major.png" alt="Staff Sergeant rank symbol">
+            <div class="col-3 talents-box">
+                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_major.png" alt="Staff Sergeant rank symbol">
                 <p>Staff Sergeant</p>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityExtraConditioning.png" alt="Extra Conditioning Icon">
+                    <p>Extra Conditioning</p>
+                </div>
+                <div>
+                    <p>Run and Gun cooldown is reduced by one turn.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityAggression.png" alt="Aggression Icon">
+                    <p>Aggression</p>
+                </div>
+                <div>
+                    <p>Gain +5 critical chance for each enemy you can see, up to a maximum of 30.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_extrapadding.png" alt="Formidable Icon">
+                    <p>Formidable</p>
+                </div>
+                <div>
+                    <p>Your gear includes an extra layer of protection, granting two extra points of Ablative HP and 50% less damage from explosive attacks.</p>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <img src="assets/images/soldier-ranks/XCOM2_rank_colonel.png" alt="Tech Sergeant rank symbol">
+            <div class="col-3 talents-box">
+                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_colonel.png" alt="Tech Sergeant rank symbol">
                 <p>Tech Sergeant</p>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityHitandRun.png" alt="Hit and Run Icon">
+                    <p>Hit and Run</p>
+                </div>
+                <div>
+                    <p>Once per turn, gain an additional action after taking a standard shot at a flanked or exposed target with your primary weapon.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_rapidfire.png" alt="Rapid Fire Icon">
+                    <p>Rapid Fire</p>
+                </div>
+                <div>
+                    <p>Fire twice in a row at an enemy. Each shot suffers an Aim penalty of -15. There is no cooldown on this ability.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityCloseEncounters.png" alt="Close Encounters Icon">
+                    <p>Close Encounters</p>
+                </div>
+                <div>
+                    <p>Once per turn, gain a bonus action after taking a standard shot with your primary weapon at an enemy within four tiles. Close Encounters cannot be used after Run and Gun is activated.</p>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <img src="assets/images/soldier-ranks/XCOM2_rank_commander.png" alt="Gunnery Sergeant rank symbol">
+            <div class="col-3 talents-box">
+                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_commander.png" alt="Gunnery Sergeant rank symbol">
                 <p>Gunnery Sergeant</p>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityBringEmOn.png" alt="Bring Them On Icon">
+                    <p>Bring 'Em On</p>
+                </div>
+                <div>
+                    <p>Gain +1 damage on critical hits for every two enemies you can see, up to a maximum of +8.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityCloseCombatSpecialist.png" alt="Close Combat Specialist Icon">
+                    <p>Close Combat Specialist</p>
+                </div>
+                <div>
+                    <p>During enemy turns, fire a free reaction shot with your primary weapon at any visible enemy within four tiles who moves or fires. Will not trigger if soldier is concealed.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/UIPerk_evasion.png" alt="Untouchable Icon">
+                    <p>Untouchable</p>
+                </div>
+                <div>
+                    <p>If you score a kill during your turn, the next attack against you during the enemy turn will miss.</p>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <img src="assets/images/soldier-ranks/XCOM2_rank_fieldmarshall.png" alt="Master Sergeant rank symbol">
+            <div class="col-3 talents-box">
+                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_fieldmarshall.png" alt="Master Sergeant rank symbol">
                 <p>Master Sergeant</p>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityStreetSweeper2.png" alt="Street Sweeper Icon">
+                    <p>Street Sweeper</p>
+                </div>
+                <div>
+                    <p>Cone-based shotgun attack that does bonus damage to unarmored targets. Blocked by heavy cover.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityChainLightning.png" alt="Chain Lightning Icon">
+                    <p>Chain Lightning</p>
+                </div>
+                <div>
+                    <p>Fire your Arc Thrower at every visible enemy who is capable of being stunned. Five-turn cooldown.</p>
+                </div>
             </div>
-            <div class="col-3">
-                <div>Icon</div>
-                <p>Info on Icon</p>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityKinetic.png" alt="Lethal Icon">
+                    <p>Lethal</p>
+                </div>
+                <div>
+                    <p>You do two additional points of base damage and one point of additional crit damage with your primary weapon.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -297,6 +413,25 @@
             </div>
         </div>
     </div>
+    <div class="break"></div>
+<!--------------------Youtube Embedded--------------------------> 
+    <div class="container talents-container assault-talents">
+        <div class="row">
+            <div class="col youtube-col">
+                <h2>Need More Help Selecting?</h2>
+                <p>Check out Jorbs video below which gives a breakdown of the early game talents</p>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/h3SPxIwsS3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <p>For the videos videos covering the later talents you can find them here:</p>
+                <a href="https://www.youtube.com/watch?v=1FbIy1_ue-Y&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=11" target="_blank">
+                    <p>Mid Game Assaults</p>
+                </a>
+                <a href="https://www.youtube.com/watch?v=1FbIy1_ue-Y&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=11" target="_blank">
+                    <p>Late Game Assaults</p>
+                </a>
+            </div>
+        </div>
+    </div>
 <!--------------------Footer-------------------------->
     <div class="break"></div>
     <footer>
@@ -305,8 +440,8 @@
                 <div class="col footer-col">
                     <p>Special thanks goes to Jorbs for allowing access to his content included on the site.</p>
                     <p>Check out his other content at:</p>
-                    <a class="footer-link" href="https://www.youtube.com/channel/UCpjr4aOTbpvat8Y77e8dd_Q"><i class="fab fa-youtube fa-2x youtube"></i>www.youtube.com/user/JoINrbs/videos</a>
-                    <a class="footer-link" href="https://www.twitch.tv/jorbs"><i class="fab fa-twitch fa-2x twitch"></i>www.twitch.tv/jorbs</a>
+                    <a class="footer-link" href="https://www.youtube.com/channel/UCpjr4aOTbpvat8Y77e8dd_Q" target="_blank"><i class="fab fa-youtube fa-2x youtube"></i>www.youtube.com/user/JoINrbs/videos</a>
+                    <a class="footer-link" href="https://www.twitch.tv/jorbs" target="_blank"><i class="fab fa-twitch fa-2x twitch"></i>www.twitch.tv/jorbs</a>
                 </div>
             </div>
             <div class="row">
@@ -318,9 +453,10 @@
         </div>
     </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/06fdee602b.js" crossorigin="anonymous"></script>
+<script src="assets/js/index.js"></script>
 </body>
 </html>
