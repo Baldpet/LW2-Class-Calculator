@@ -50,6 +50,20 @@ body {
     background-color: #343a40;
 }
 
+.box-style {
+    padding: 15px;
+    width: 95%;
+    color: white;
+    margin: auto;
+    border: 0.1rem #10b3d8 solid;
+    border-radius: 0px 10px;
+    background-color: #343a40;
+}
+
+div .box-style {
+    margin-bottom: 20px;
+}
+
 /*  ------------- Colors ---------------- */
 
 
@@ -75,12 +89,50 @@ header {
     padding: 0;
 }
 
+/*  ------------- Class Intro and Selection ---------------- */
+
+.class-selector{
+    position: relative;
+    height: 60px;
+    text-align: center;
+    color: white;
+    border: 0.1rem #10b3d8 solid;
+    border-radius: 0px 10px;
+    background-color: #343a40;
+    margin-bottom: 15px;
+}
+
+.class-selector p {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 60px;
+}
+
+
+.class-info-container {
+    background-color: rgba(52, 58, 64, 0.7);
+    color: white;
+}
+
+.prebuild-button-col {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.prebuild-button-col .button-style {
+    height: 5rem;
+}
+
+
 /*  ------------- Talents ---------------- */
 
 .talents-container {
     text-align: center;
-    opacity: 0.7;
-    background-color: #343a40;
+    background-color: rgba(52, 58, 64, 0.7);
     color: #ffffff;
 }
 
@@ -124,7 +176,7 @@ header {
 /*  ------------- Game Styles ---------------- */
 
 .game-container {
-    background-color: rgba(245, 245, 245, 0.5) ;
+    background-color: rgba(245, 245, 245, 0.75) ;
     height: 80vh;
     width: 100%;
     border: 1px solid;
