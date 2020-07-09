@@ -29,55 +29,42 @@ let starSwitch = 0;
 
 $(".fa-star").click(function(){
     if($(this).is("#star-1")){
-        starSwitch = $(".star-active").length;
-        $(".fa-star").removeClass("star-active");
-        $(this).addClass("star-active");
+        starSwitch = 1;
     } else if($(this).is("#star-2")){
-        starSwitch = $(".star-active").length;
-        $(".fa-star").removeClass("star-active");
-        $("#star-1").addClass("star-active");
-        $(this).addClass("star-active");
+        starSwitch = 2;
     } else if($(this).is("#star-3")){
-        starSwitch = $(".star-active").length;
-        $(".fa-star").removeClass("star-active");
-        $("#star-1").addClass("star-active");
-        $("#star-2").addClass("star-active");
-        $(this).addClass("star-active");
+        starSwitch = 3;
     } else {
-        starSwitch = $(".star-active").length;
-        $(".fa-star").removeClass("star-active");
-        $("#star-1").addClass("star-active");
-        $("#star-2").addClass("star-active");
-        $("#star-3").addClass("star-active");
-        $(this).addClass("star-active");
+        starSwitch = 4;
     }
 })
 
-$(".no-reset").click(function(){
+function StarSwitchConfirm(){
     if(starSwitch === 1){
         $(".fa-star").removeClass("star-active");
         $("#star-1").addClass("star-active");
-    } else if (starSwitch === 2){
+    } else if(starSwitch === 2){
         $(".fa-star").removeClass("star-active");
         $("#star-1").addClass("star-active");
         $("#star-2").addClass("star-active");
-    } else if (starSwitch === 3){
+    } else if(starSwitch === 3){
         $(".fa-star").removeClass("star-active");
         $("#star-1").addClass("star-active");
         $("#star-2").addClass("star-active");
         $("#star-3").addClass("star-active");
-    } else if (starSwitch === 4){
+    } else if(starSwitch === 4){
         $(".fa-star").removeClass("star-active");
         $("#star-1").addClass("star-active");
         $("#star-2").addClass("star-active");
         $("#star-3").addClass("star-active");
         $("#star-4").addClass("star-active");
     }
-})
+}
 
 $("#resetGame").click(function(){
     reset();
     starBestTime();
+    StarSwitchConfirm();
 })
 
 function starBestTime() {
