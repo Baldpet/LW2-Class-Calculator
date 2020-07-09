@@ -7,6 +7,7 @@ if(localStorage.getItem("timeOne") === null){
 } else {
     $("#best-time").html(localStorage.getItem("timeOne"));
 }
+
 // --------- Fisher-Yates shuffle ------------
 
 function shuffle(array) {
@@ -25,6 +26,7 @@ function shuffle(array) {
 }
 
 // ---------Difficulty Switching ------------
+
 let starSwitch = 0;
 
 $(".fa-star").click(function(){
@@ -215,6 +217,7 @@ function newGame(){
 }
 
 // ---------timer & best time ------------
+
 let sec = 0;
 let timer;
 let time;
@@ -258,6 +261,7 @@ function bestTimeOne(bestTimeCheck) {
 }
 
 // ---------attempt counter ------------
+
 let counter = 0;
 function attemptCounter(boolean) {
     counter = counter +1;
@@ -306,6 +310,7 @@ $(".reset-button").click(function(){
 
 
 // ---------card flipping ------------
+
 let hasFlipped = false;
 let card1, card2;
 var busy = false;
@@ -316,16 +321,9 @@ function flipCard(){
                 $(this).addClass("flip");
                 if(hasFlipped === true) {
                     card2 = $(this)
-                    // setTimeout(() =>{
-                    //     busy = false;
-                    // }, 1800)
                     checkForCardMatch()             
                 } else {
                     hasFlipped = true;
-                    // busy = true;
-                    // setTimeout(() =>{
-                    //     busy = false;
-                    // }, 300)
                     card1 = $(this);
                     card1.off("click");
                     busy = false;
