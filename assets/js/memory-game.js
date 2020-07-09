@@ -277,8 +277,7 @@ $(".start").click(function(){
     removeFixedTop();
     newGame();
     startTimer();
-    //flipCard();
-   
+    flipCard();   
 })
 
 // ---------reset game ------------
@@ -294,30 +293,6 @@ function reset() {
     $(".lose-container").off("click");
     $(".lose-container").fadeOut("fast");
     $(".win-container").fadeOut("fast");
-    $(".game-card-style").click(function(card){
-        if(busy === false) {
-                $(this).addClass("flip");         
-                if(hasFlipped === true) {
-                    card2 = $(this)
-                    busy = true;
-                    setTimeout(() =>{
-                        busy = false;
-                    }, 1800)
-                    checkForCardMatch()
-                    
-                } else {
-                    hasFlipped = true;
-                    busy = true;
-                    setTimeout(() =>{
-                        busy = false;
-                    }, 300)
-                    card1 = $(this);
-                    card1.off("click");
-                    
-                }
-            
-        }
-    });
     stopTimer();
         matchedCards= [];
         card1 = undefined;
@@ -334,29 +309,31 @@ $(".reset-button").click(function(){
 let hasFlipped = false;
 let card1, card2;
 var busy = false;
-$(".game-card-style").click(function(card){
-    if(busy === false) {
-            $(this).addClass("flip");
-            if(hasFlipped === true) {
-                card2 = $(this)
-                busy = true;
-                setTimeout(() =>{
-                    busy = false;
-                }, 1800)
-                checkForCardMatch()             
-            } else {
-                hasFlipped = true;
-                busy = true;
-                setTimeout(() =>{
-                    busy = false;
-                }, 300)
-                card1 = $(this);
-                card1.off("click");
-                
-            }
-        
-    }
-});
+function flipCard(){
+    $(".game-card-style").click(function(card){
+        if(busy === false) {
+                $(this).addClass("flip");
+                if(hasFlipped === true) {
+                    card2 = $(this)
+                    busy = true;
+                    setTimeout(() =>{
+                        busy = false;
+                    }, 1800)
+                    checkForCardMatch()             
+                } else {
+                    hasFlipped = true;
+                    busy = true;
+                    setTimeout(() =>{
+                        busy = false;
+                    }, 300)
+                    card1 = $(this);
+                    card1.off("click");
+                    
+                }
+            
+        }
+    });
+}
 
 // ---------Card Match Logic ------------
 
