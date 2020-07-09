@@ -426,3 +426,23 @@ header {
         padding-left: 0;
     }
 }
+
+@media only screen and (max-width: 420px) {
+    .talents-box {
+        padding-left: 0;
+    }
+    .talents-box p {
+        font-size: 0.8rem;
+        
+    }
+}  
+
+@media only screen and (max-width: 360px) {
+    .youtube-video {
+    height: 180px;
+    width: 320px;
+    }
+    .youtube-col{
+        padding-left: 0;
+    }
+}
