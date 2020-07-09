@@ -234,62 +234,26 @@ function stopTimer() {
 }
 
 function bestTime() {
+    var bestTimeCheck;
     if(difficulty() === 1){
-        bestTimeOne();
+        bestTimeCheck = 'timeOne';
     } else if(difficulty() === 2) {
-        bestTimeTwo();
+        bestTimeCheck = 'timeTwo';
     } else if(difficulty() === 3) {
-        bestTimeThree();
+        bestTimeCheck = 'timeThree';
     } else if(difficulty() === 4){
-        bestTimeFour();
+        bestTimeCheck = 'timeFour';
     };
+    bestTimeOne(bestTimeCheck)
 }
 
-function bestTimeOne() {
-    if(time < localStorage.getItem("timeOne")) {
-        localStorage.setItem("timeOne", time);
+function bestTimeOne(bestTimeCheck) {
+    if(time < localStorage.getItem(bestTimeCheck)) {
+        localStorage.setItem(bestTimeCheck, time);
         $("#best-time").html(time);
-        console.log("working");
-    } else if(localStorage.getItem("timeOne") === null){
-        localStorage.setItem("timeOne", time);
-        $("#best-time").html(time);
-        
-    }
-}
-
-function bestTimeTwo() {
-    if(time < localStorage.getItem("timeTwo")) {
-        localStorage.setItem("timeTwo", time);
-        $("#best-time").html(time);
-        console.log("working");
-    } else if(localStorage.getItem("timeTwo") === null){
-        localStorage.setItem("timeTwo", time);
-        $("#best-time").html(time);
-        
-    }
-}
-
-function bestTimeThree() {
-    if(time < localStorage.getItem("timeThree")) {
-        localStorage.setItem("timeThree", time);
-        $("#best-time").html(time);
-        console.log("working");
-    } else if(localStorage.getItem("timeThree") === null){
-        localStorage.setItem("timeThree", time);
-        $("#best-time").html(time);
-        console.log("working3");
-    }
-}
-
-function bestTimeFour() {
-    if(time < localStorage.getItem("timeFour")) {
-        localStorage.setItem("timeFour", time);
-        $("#best-time").html(time);
-        console.log("working");
-    } else if(localStorage.getItem("timeFour") === null){
-        localStorage.setItem("timeFour", time);
-        $("#best-time").html(time);
-        
+    } else if(localStorage.getItem(bestTimeCheck) === null){
+        localStorage.setItem(bestTimeCheck, time);
+        $("#best-time").html(time);   
     }
 }
 
