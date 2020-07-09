@@ -370,13 +370,8 @@ function unflip(){
 }
 
 function checkLose() {
-    if(card1.attr("name") === "muton" ) {
-        gameLose() 
-    }
-    if(card1.attr("name") === "sectoid") {
-        gameLose() 
-    }
-    if(card1.attr("name") === "chryssalid") {
+    var cardName = card1.attr("name");
+    if(cardName === "muton" || cardName === "sectoid" || cardName === "chryssalid") {
         gameLose() 
     }
 }
