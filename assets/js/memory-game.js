@@ -312,23 +312,23 @@ var busy = false;
 function flipCard(){
     $(".game-card-style").click(function(card){
         if(busy === false) {
+                busy = true;
                 $(this).addClass("flip");
                 if(hasFlipped === true) {
                     card2 = $(this)
-                    busy = true;
-                    setTimeout(() =>{
-                        busy = false;
-                    }, 1800)
+                    // setTimeout(() =>{
+                    //     busy = false;
+                    // }, 1800)
                     checkForCardMatch()             
                 } else {
                     hasFlipped = true;
-                    busy = true;
-                    setTimeout(() =>{
-                        busy = false;
-                    }, 300)
+                    // busy = true;
+                    // setTimeout(() =>{
+                    //     busy = false;
+                    // }, 300)
                     card1 = $(this);
                     card1.off("click");
-                    
+                    busy = false;
                 }
             
         }
@@ -345,6 +345,7 @@ function checkForCardMatch(card) {
         matchedCards.push(card2);
         card2.off("click");
         checkVictory();
+        busy = false;
     } else {
         unflip()
     }
@@ -355,17 +356,22 @@ function unflip(){
     setTimeout(function(){
         card1.removeClass("flip");
         card1.on("click", function() {
-            $(this).addClass("flip");  
-            if(hasFlipped === true) {
-                card2 = $(this)
-                checkForCardMatch()
-            } else {
-                hasFlipped = true;
-                card1 = $(this);
-                card1.off("click");
-            };
+            if(busy === false){
+                busy = true;
+                $(this).addClass("flip");  
+                if(hasFlipped === true) {
+                    card2 = $(this)
+                    checkForCardMatch()
+                } else {
+                    hasFlipped = true;
+                    card1 = $(this);
+                    card1.off("click");
+                    busy = false;
+                };
+            }
         });
         card2.removeClass("flip");
+        busy = false;
     }, 700)
 }
 
