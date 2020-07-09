@@ -63,8 +63,8 @@ function StarSwitchConfirm(){
 
 $("#resetGame").click(function(){
     reset();
-    starBestTime();
     StarSwitchConfirm();
+    starBestTime();
 })
 
 function starBestTime() {
