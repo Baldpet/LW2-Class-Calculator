@@ -186,6 +186,11 @@ header {
     border: 4px yellow ridge;
 }
 
+.rank-icon {
+    height: 45px;
+    width: 45px;
+}
+
 /*  ------------- Game Intro ---------------- */
 
 .container-game-intro {

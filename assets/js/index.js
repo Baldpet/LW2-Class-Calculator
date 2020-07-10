@@ -14,6 +14,7 @@ function onYouTubeIframeAPIReady() {
 $("#assault").click(function(){
     $(".talents-box").off("click");
     talentClick();
+    talentIcon()
 })
 
 
@@ -55,3 +56,15 @@ function removeTalent(box){
         talentClick();
     })
  }
+
+// ----- Talents Icons -------
+
+function talentIcon(){
+    $(".talents-icon").click(function(){
+        var iconRow = $(this).parent().parent().parent();
+        console.log(iconRow)
+        var icons = $(iconRow).find(".talents-icon").removeClass("talents-active");
+        console.log(icons)
+        $(this).addClass("talents-active");
+    })
+}
