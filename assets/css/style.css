@@ -149,10 +149,14 @@ header {
 }
 
 .talents-box {
-    /* border-bottom: 1px #83c0ce solid; */
     margin-top: 10px;
     margin-bottom: 10px; 
     padding-top: 10px; 
+}
+
+.talent-box-last{
+    margin-right: 2px;
+    margin-left: -2px;
 }
 
 .talents-box-active {
@@ -183,6 +187,10 @@ header {
 }
 
 .talents-active {
+    border: 4px yellow ridge;
+}
+
+.talents-always-active {
     border: 4px yellow ridge;
 }
 
