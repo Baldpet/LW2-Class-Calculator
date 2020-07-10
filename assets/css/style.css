@@ -149,9 +149,32 @@ header {
 }
 
 .talents-box {
-    border-bottom: 1px #83c0ce solid;
+    /* border-bottom: 1px #83c0ce solid; */
     margin-top: 10px;
     margin-bottom: 10px; 
+    padding-top: 10px; 
+}
+
+.talents-box-active {
+    border-top: 2px #83c0ce solid;
+    border-left: 2px #83c0ce solid;
+    border-right: 2px #83c0ce solid;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.talents-box-other {
+    border-bottom: 2px #83c0ce solid;
+}
+
+.talents-box-info {
+    margin: auto;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.talents-border {
+     border: 1px #83c0ce solid;
 }
 
 .talents-icon {
