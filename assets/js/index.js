@@ -12,10 +12,60 @@ function onYouTubeIframeAPIReady() {
 // ----- Talents -------
 
 $("#assault").click(function(){
+    classSelector($(this));
+    $(".assault-talents").removeClass("hidden");
+})
+
+$("#grenadier").click(function(){
+    classSelector($(this));
+    $(".grenadier-talents").removeClass("hidden");
+})
+
+$("#gunner").click(function(){
+    classSelector($(this));
+    $(".gunner-talents").removeClass("hidden");
+})
+
+$("#ranger").click(function(){
+    classSelector($(this));
+    $(".ranger-talents").removeClass("hidden");
+})
+
+$("#sharpshooter").click(function(){
+    classSelector($(this));
+    $(".sharpshooter-talents").removeClass("hidden");
+})
+
+$("#shinobi").click(function(){
+    classSelector($(this));
+    $(".shinobi-talents").removeClass("hidden");
+})
+
+$("#specialist").click(function(){
+    classSelector($(this));
+    $(".specialist-talents").removeClass("hidden");
+})
+
+$("#technical").click(function(){
+    classSelector($(this));
+    $(".technical-talents").removeClass("hidden");
+})
+
+function classSelector(box){
+    $(".class-selector").removeClass("talents-active");
+    $(box).addClass("talents-active");
     $(".talents-box").off("click");
     talentClick();
-    talentIcon()
-})
+    talentIcon();
+    $(".assault-talents").addClass("hidden");
+    $(".grenadier-talents").addClass("hidden");
+    $(".gunner-talents").addClass("hidden");
+    $(".ranger-talents").addClass("hidden");
+    $(".sharpshooter-talents").addClass("hidden");
+    $(".shinobi-talents").addClass("hidden");
+    $(".specialist-talents").addClass("hidden");
+    $(".technical-talents").addClass("hidden");
+}
 
 
 function talentClick(){
