@@ -9,7 +9,7 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
-// ----- Talents -------
+// ----- Class Selector -------
 
 $("#assault").click(function(){
     classSelector($(this));
@@ -67,6 +67,7 @@ function classSelector(box){
     $(".technical-talents").addClass("hidden");
 }
 
+// ----- Talents -------
 
 function talentClick(){
     $(".talents-box").click(function(){
@@ -112,9 +113,18 @@ function removeTalent(box){
 function talentIcon(){
     $(".talents-icon").click(function(){
         var iconRow = $(this).parent().parent().parent();
-        console.log(iconRow)
         var icons = $(iconRow).find(".talents-icon").removeClass("talents-active");
-        console.log(icons)
         $(this).addClass("talents-active");
     })
+}
+
+// ----- Reset -------
+
+$(".talents-reset-button").click(function(){
+    resetTalents();
+})
+
+function resetTalents(){
+    $(".talents-icon").removeClass("talents-active");
+    $(".talents-box-info").addClass("hidden");
 }
