@@ -268,6 +268,15 @@ header {
     text-align: center;
 }
 
+.to-win{
+    font-size: 1.2rem;
+}
+
+.caution{
+    color: red;
+    font-size: 1.2rem;
+}
+
 /*  ------------- Game Styles ---------------- */
 
 .game-container {
