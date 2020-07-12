@@ -30,6 +30,10 @@ body {
     background-color: rgba(245, 245, 245);
 }
 
+.intro-container{
+    box-shadow: -3px 3px 5px 6px black;
+}
+
 .footer{
     background-color: #343434;
     color: white;
@@ -50,9 +54,14 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     color: white;
-    border: 0.1rem #10b3d8 solid;
+    border: 0.25rem #83c0ce solid;
     border-radius: 0px 10px;
     background-color: #343a40;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-style:hover {
+    transform: scale(1.1);
 }
 
 .box-style {
@@ -60,7 +69,7 @@ body {
     width: 95%;
     color: white;
     margin: auto;
-    border: 0.1rem #10b3d8 solid;
+    border: 0.25rem #83c0ce solid;
     border-radius: 0px 10px;
     background-color: #343a40;
 }
@@ -108,7 +117,7 @@ header {
     height: 60px;
     text-align: center;
     color: white;
-    border: 0.1rem #10b3d8 solid;
+    border: 0.25rem #18b6da solid;
     border-radius: 0px 10px;
     background-color: #343a40;
     margin-bottom: 15px;
@@ -121,14 +130,14 @@ header {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: rgba(131,192,206,0.4);
+  background-color: rgba(24,182,218,0.4);
 	-webkit-transition: none;
 	   -moz-transition: none;
 	        transition: none;
 }
 .class-selector:hover::after {
   width: 120%;
-  background-color: rgba(131,192,206,0);
+  background-color: rgba(24,182,218,0);
   
 	-webkit-transition: all 0.8s ease-in-out;
 	   -moz-transition: all 0.8s ease-in-out;
@@ -221,11 +230,11 @@ header {
 }
 
 .talents-active {
-    border: 4px yellow ridge;
+    border: 5px yellow ridge;
 }
 
 .talents-always-active {
-    border: 4px yellow ridge;
+    border: 5px yellow ridge;
 }
 
 .rank-icon {
@@ -302,7 +311,7 @@ header {
     padding: 10px;
     background-color: #343a40;
     color: #ffffff;
-    border: 0.2rem #10b3d8 solid;
+    border: 0.2rem #83c0ce solid;
     border-radius: 0px 15px;
 }
 
@@ -340,7 +349,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 0.2rem #10b3d8 solid;
+    border: 0.2rem #83c0ce solid;
     border-radius: 10px 10px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; 
@@ -352,7 +361,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 0.2rem #10b3d8 solid;
+    border: 0.2rem #83c0ce solid;
     border-radius: 10px 10px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
