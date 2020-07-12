@@ -468,8 +468,11 @@ header {
 }
 
 .footer-link{
-    display: block;
+    display: table;
     margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #83c0ce;
 }
 
 .youtube {
@@ -487,6 +490,23 @@ header {
 .youtube-video {
     height: 360px;
     width: 640px;
+}
+
+.link-button {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/* a .link-button {
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+} */
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
