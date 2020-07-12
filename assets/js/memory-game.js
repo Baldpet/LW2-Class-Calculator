@@ -406,7 +406,6 @@ function soldierNum() {
 
 function gameLose() {
     if($(".star-active").length === 1){
-        console.log("lose")
         $('.lose-container-one').fadeIn("slow");
         setTimeout(() => { 
             $(".lose-container-one").click(function(){
@@ -427,8 +426,9 @@ function gameLose() {
 }
 
 function gameWin() {
+    timesWon();
+
     if($(".star-active").length === 4){
-        console.log("win")
         $(".win-container-four").fadeIn("slow");
         setTimeout(() => {
             $(".win-container-four").click(function(){
@@ -443,9 +443,45 @@ function gameWin() {
             })
         }, 1500);
     }
+
     resetCounter();
     stopTimer();
     bestTime();
+}
+
+function timesWon() {
+    if(localStorage.getItem("winOne") === null){
+        localStorage.setItem("winOne", 0);
+        localStorage.setItem("winTwo", 0);
+        localStorage.setItem("winThree", 0);
+        localStorage.setItem("winFour", 0);
+    }
+
+    if(difficulty() === 1){
+        var wins = parseInt(localStorage.getItem("winOne")) + 1;
+        localStorage.setItem("winOne", wins);
+        $(".wins").html(function(){
+            return " " + wins + " ";
+        });
+    } else if( difficulty() === 2){
+        var wins = parseInt(localStorage.getItem("winTwo")) + 1;
+        localStorage.setItem("winTwo", wins);
+        $(".wins").html(function(){
+            return " " + wins + " ";
+        });
+    } else if(difficulty() === 3){
+        var wins = parseInt(localStorage.getItem("winThree")) + 1;
+        localStorage.setItem("winThree", wins);
+        $(".wins").html(function(){
+            return " " + wins + " ";
+        });
+    } else if(difficulty() === 4){
+        var wins = parseInt(localStorage.getItem("winFour")) + 1;
+        localStorage.setItem("winFour", wins);
+        $(".win-four").html(function(){
+            return " " + wins + " ";
+        });
+    }
 }
 
 // ----------Removing/Adding Fixed Top Nav-------------------
