@@ -44,7 +44,7 @@
     </div>
     <div class="break"></div>
 <!--------------------Introduction-------------------------->
-    <div class="container">
+    <div class="container intro-container">
         <div class="row">
             <div class="col">
                 <div>
@@ -62,7 +62,7 @@
     </div>
     <div class="break"></div>
 <!--------------------Class Selector-------------------------->
-    <div class="container">
+    <div class="container intro-container">
         <div class="row">
             <div class="col selector-col">
                 <h2>Class Selector</h2>
@@ -71,7 +71,7 @@
         </div>
         <div class="row">
             <div class="col-6 col-md-3">
-                <div class="class-selector talents-active" id="assault">
+                <div class="class-selector" id="assault">
                     <p>Assault</p>
                 </div>
             </div>
@@ -116,53 +116,210 @@
     </div>
     <div class="break"></div>
 <!--------------------Class Information/Builds-------------------------->
-    <div class="container class-info-container assault-talents">
+    <!--------Assault---------->
+    <div class="container class-info-container assault-talents hidden">
         <div class="row">
             <div class="col">
                 <h2>Assault</h2>
                 <div class="box-style">
                     <p>Assualts specialise in dealing high amounts of damage with their primary weapon, which is a shotgun. They are experts in breaking through the enemy lines and creating flanks.</p>
-                    <p>Assaults are also able to stun the enemies with their secondary weapon the Arc Pulser. The Arc Pulser is able to deal damage to robotic enemies if specced woth certain talents.</p>
-                    <p>If you are new to the game or Long War 2 why not try one of the prebuilt talent builds.</p>
+                    <p>Assaults are also able to stun the enemies with their secondary weapon the Arc Pulser. The Arc Pulser is able to deal damage to robotic enemies if specced with certain talents.</p>
+                    <p>If you are new to Long War 2 why not try one of the prebuilt talent builds below.</p>
                 </div>
             </div>
         </div>
         <div class="row">
             
             <div class="col-12 col-md-6 prebuild-button-col">
-                <button class="button-style ">Pre-built talents</button>
+                <button class="button-style prebuilt-talents" id="assault-one">Close Combat Assault</button>
             </div>
             <div class="col-12 col-md-6 prebuild-button-col">
-                <button class="button-style">Pre-built talents</button>
+                <button class="button-style prebuilt-talents" id="assault-two">Raider Assault</button>
             </div>
         </div>
     </div>
+    <!--------Grenadier---------->
+    <div class="container class-info-container grenadier-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Grenadier</h2>
+                <div class="box-style">
+                    <p>The Grenadier is mainly a support soldier who is equipped with a grenade launcher which allows them to launch grenades further and with a bigger splash area than regular soldiers.</p>
+                    <p>Through they talent tree they are able to specialise in destroying enemy cover, stunning enemies and making the hack chance easier on mechanical enemies.</p>
+                    <p>If you are new to Long War 2 why not try one of the prebuilt talent builds below.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="grenadier-one">Offensive Grenadier</button>
+            </div>
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="grenadier-two">Support Grenadier</button>
+            </div>
+        </div>
+    </div>
+    <!--------Gunner---------->
+    <div class="container class-info-container gunner-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Gunner</h2>
+                <div class="box-style">
+                    <p>The Gunner can be a damage dealer or a support soldier, they are unique as the only class able to operate the heavy cannon primary weapon. The cannon is able to deal heavy damage and restrict the enemy through suppression.</p>
+                    <p>Dependent on what you need for the squad the gunner can specialise in suppression and locking down the enemy or on damage dealing so that when they hit the enemy is unlikely to get back up.</p>
+                    <p>If you are new to Long War 2 why not try one of the prebuilt talent builds below.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="gunner-one">Offensive Gunner</button>
+            </div>
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="gunner-two">Lockdown Gunner</button>
+            </div>
+        </div>
+    </div>
+    <!--------Ranger---------->
+    <div class="container class-info-container ranger-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Ranger</h2>
+                <div class="box-style">
+                    <p>Rangers are mainly damage dealers who specialise in dealing damage with their main rifle. They also have access to a sawn-off shotgun to allow them to be more effective in short range situations.</p>
+                    <p>Through the talent tree you can spec the soldiers to excel in offensive situations by multiple attacks in your turn or defensive abilities for when the aliens are patrolling to you.</p>
+                    <p>If you are new to Long War 2 why not try one of the prebuilt talent builds below.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="ranger-one">Offensive Ranger</button>
+            </div>
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="ranger-two">Overwatch Ranger</button>
+            </div>
+        </div>
+    </div>
+    <!--------Sharpshooter---------->
+    <div class="container class-info-container sharpshooter-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Sharpshooter</h2>
+                <div class="box-style">
+                    <p>Sharpshooters specialise by using their sniper rifle to deal high damage. With high aim they are likely to be able to hit shots even when the enemy is in high cover.
+                     Snipers can also be used in a support role utilising their holo-targeter to allow the rest of the squad a higher chance to hit.</p>
+                    <p>The Sharpshooter talent tree allows you to maximise your role either as a spotter for the rest of the squad or building you into a highly accurate assassin.</p>
+                    <p>If you are new to Long War 2 why not try one of the prebuilt talent builds below.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="sharpshooter-one">High Damage Sharpshooter</button>
+            </div>
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="sharpshooter-two">Scout Sharpshooter</button>
+            </div>
+        </div>
+    </div>
+    <!--------Shinobi---------->
+    <div class="container class-info-container shinobi-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Shinobi</h2>
+                <div class="box-style">
+                    <p>The Shinobi class is usually a support class allowing vision of the battlefield without triggering the enemy patrols. They can also be damage dealers utilising their expertise with their sword.</p>
+                    <p>The Shinobi talent tree allows you to spec them to be extremely hard for the aliens to detect or to give them more skills with their sword to turn them into a close combat damage dealer.</p>
+                    <p>If you are new to Long War 2 why not try one of the prebuilt talent builds below.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="shinobi-one">Stealthy Shinobi</button>
+            </div>
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="shinobi-two">Blademaster Shinobi</button>
+            </div>
+        </div>
+    </div>
+    <!--------Specialist---------->
+    <div class="container class-info-container specialist-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Specialist</h2>
+                <div class="box-style">
+                    <p>The Specialist soldier is an expert in all things tech, they are very versatile and can be a healer, support or damage dealer. They have a drone with them that most of their skills are utilised through.</p>
+                    <p>Through the talent tree the Specialist is able to increase their hack chances against the mechanical enemies or can be specced towards a more supportive role through healing and sustain.</p>
+                    <p>If you are new to Long War 2 why not try one of the prebuilt talent builds below.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="specialist-one">Healer Specialist</button>
+            </div>
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="specialist-two">Overwatch Specialist</button>
+            </div>
+        </div>
+    </div>
+    <!--------Technical---------->
+    <div class="container class-info-container technical-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Technical</h2>
+                <div class="box-style">
+                    <p>The Technical is a soldier specialised in heavy weapons. They have a rocket and a flamethrower equipped which are used to destroy enemy cover and control the battlefield.</p>
+                    <p>The Technical's talent tree is aimed at increasing the power and functionality of their rockets and flamethrower.</p>
+                    <p>If you are new to Long War 2 why not try one of the prebuilt talent builds below.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="technical-one">Rocket Technical</button>
+            </div>
+            <div class="col-12 col-md-6 prebuild-button-col">
+                <button class="button-style prebuilt-talents" id="technical-two">Flamethrower Technical</button>
+            </div>
+        </div>
+    </div>
+
 <!--------------------Assault Talents-------------------------->
-    <div class="container talents-container assault-talents">
+    <div class="container talents-container assault-talents hidden">
         <div class="row">
             <div class="col">
                 <h2>Talents</h2>
             </div>
         </div>
         <!-----Squaddie-------->
-        <div class="row">
+        <div class="row talents-row">
             <div class="col-3 talents-box">
-                <img class="talents-icon" src="assets/images/soldier-ranks/38px-XCOM2_rank_squaddie.png" alt="Squaddie rank symbol">
+                <img class="rank-icon" src="assets/images/soldier-ranks/38px-XCOM2_rank_squaddie.png" alt="Squaddie rank symbol">
                 <p>Squaddie</p>
             </div>
             <div class="col-3 talents-box">
                 <div>
-                    <img class="talents-icon talents-active" src="assets/images/soldier-talents/assault/UIPerk_runandgun.png" alt="Run and Gun Icon">
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/assault/UIPerk_runandgun.png" alt="Run and Gun Icon">
                     <p>Run and Gun</p>
                 </div>
             </div>
             <div class="col-3 talents-box">
                 <div>
-                    <img class="talents-icon talents-active" src="assets/images/soldier-talents/assault/LW_AbilityArcthrowerStun.png" alt="Stun Icon">
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/assault/LW_AbilityArcthrowerStun.png" alt="Stun Icon">
                     <p>Stun</p>
                 </div>
             </div>
-            <div class="col-3 talents-box">
+            <div class="col-3 talents-box talent-box-last">
                 <div></div>
                 <p></p>
             </div>
@@ -181,7 +338,7 @@
                     <p>Fire your Arc Thrower to incapacitate a target</p>
                 </div>
             </div>
-            <div class="col-9 col-md-3 talents-box-info hidden">
+            <div class="col-9 col-md-3 talents-box-info  hidden">
                 <div></div>
                 <p></p>
             </div>
@@ -190,7 +347,7 @@
         <!-----Lance Corporal-------->
         <div class="row">
             <div class="col-3 talents-box">
-                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_lieutenant.png" alt="Lance Corporal rank symbol">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_lieutenant.png" alt="Lance Corporal rank symbol">
                 <p>Lance Corporal</p>
             </div>
             <div class="col-3 talents-box">
@@ -205,9 +362,9 @@
                     <p>Electro Shock</p>
                 </div>
             </div>
-            <div class="col-3 talents-box">
+            <div class="col-3 talents-box talent-box-last">
                 <div>
-                    <img class="talents-icon" src="assets/images/soldier-talents/assault/UIPerk_lightningreflexes.png" alt="Lightening Reflexes Icon">
+                    <img class="talents-icon assault-one assault-two" src="assets/images/soldier-talents/assault/UIPerk_lightningreflexes.png" alt="Lightening Reflexes Icon">
                     <p>Lightning Reflexes</p>
                 </div>
             </div>
@@ -236,12 +393,12 @@
         <!-----Corporal-------->
         <div class="row">
             <div class="col-3 talents-box">
-                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_sergeant.png" alt="Corporal rank symbol">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_sergeant.png" alt="Corporal rank symbol">
                 <p>Corporal</p>
             </div>
             <div class="col-3 talents-box">
                 <div>
-                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityStreetSweeper.png" alt="Trench Gun Icon">
+                    <img class="talents-icon assault-two" src="assets/images/soldier-talents/assault/LW_AbilityStreetSweeper.png" alt="Trench Gun Icon">
                     <p>Trench Gun</p>
                 </div>
             </div>
@@ -251,9 +408,9 @@
                     <p>Arc Pulser</p>
                 </div>
             </div>
-            <div class="col-3 talents-box">
+            <div class="col-3 talents-box talent-box-last">
                 <div>
-                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityCloseAndPersonal.png" alt="Close and Personal Icon">
+                    <img class="talents-icon assault-one" src="assets/images/soldier-talents/assault/LW_AbilityCloseAndPersonal.png" alt="Close and Personal Icon">
                     <p>Close and Personal</p>
                 </div>
             </div>
@@ -282,12 +439,12 @@
         <!-----Sergeant-------->
         <div class="row">
             <div class="col-3 talents-box">
-                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_captain.png" alt="Sergeant rank symbol">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_captain.png" alt="Sergeant rank symbol">
                 <p>Sergeant</p>
             </div>
             <div class="col-3 talents-box">
                 <div>
-                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityKillerInstinct.png" alt="Killer Instinct Icon">
+                    <img class="talents-icon assault-two" src="assets/images/soldier-talents/assault/LW_AbilityKillerInstinct.png" alt="Killer Instinct Icon">
                     <p>Killer Instinct</p>
                 </div>
             </div>
@@ -297,9 +454,9 @@
                     <p>Stun Gunner</p>
                 </div>
             </div>
-            <div class="col-3 talents-box">
+            <div class="col-3 talents-box talent-box-last">
                 <div>
-                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityFortify.png" alt="Fortify Icon">
+                    <img class="talents-icon assault-one" src="assets/images/soldier-talents/cross-class/LW_AbilityFortify.png" alt="Fortify Icon">
                     <p>Fortify</p>
                 </div>
             </div>
@@ -328,12 +485,12 @@
         <!-----Staff Sergeant-------->
         <div class="row">
             <div class="col-3 talents-box">
-                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_major.png" alt="Staff Sergeant rank symbol">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_major.png" alt="Staff Sergeant rank symbol">
                 <p>Staff Sergeant</p>
             </div>
             <div class="col-3 talents-box">
                 <div>
-                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityExtraConditioning.png" alt="Extra Conditioning Icon">
+                    <img class="talents-icon assault-two" src="assets/images/soldier-talents/cross-class/LW_AbilityExtraConditioning.png" alt="Extra Conditioning Icon">
                     <p>Extra Conditioning</p>
                 </div>
             </div>
@@ -343,9 +500,9 @@
                     <p>Aggression</p>
                 </div>
             </div>
-            <div class="col-3 talents-box">
+            <div class="col-3 talents-box talent-box-last">
                 <div>
-                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_extrapadding.png" alt="Formidable Icon">
+                    <img class="talents-icon assault-one" src="assets/images/soldier-talents/cross-class/UIPerk_extrapadding.png" alt="Formidable Icon">
                     <p>Formidable</p>
                 </div>
             </div>
@@ -374,7 +531,7 @@
         <!-----Tech Sergeant-------->
         <div class="row">
             <div class="col-3 talents-box">
-                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_colonel.png" alt="Tech Sergeant rank symbol">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_colonel.png" alt="Tech Sergeant rank symbol">
                 <p>Tech Sergeant</p>
             </div>
             <div class="col-3 talents-box">
@@ -385,11 +542,11 @@
             </div>
             <div class="col-3 talents-box">
                 <div>
-                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_rapidfire.png" alt="Rapid Fire Icon">
+                    <img class="talents-icon assault-one assault-two" src="assets/images/soldier-talents/cross-class/UIPerk_rapidfire.png" alt="Rapid Fire Icon">
                     <p>Rapid Fire</p>
                 </div>
             </div>
-            <div class="col-3 talents-box">
+            <div class="col-3 talents-box talent-box-last">
                 <div>
                     <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityCloseEncounters.png" alt="Close Encounters Icon">
                     <p>Close Encounters</p>
@@ -420,7 +577,7 @@
         <!-----Gunnery Sergeant-------->
         <div class="row">
             <div class="col-3 talents-box">
-                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_commander.png" alt="Gunnery Sergeant rank symbol">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_commander.png" alt="Gunnery Sergeant rank symbol">
                 <p>Gunnery Sergeant</p>
             </div>
             <div class="col-3 talents-box">
@@ -431,11 +588,11 @@
             </div>
             <div class="col-3 talents-box">
                 <div>
-                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityCloseCombatSpecialist.png" alt="Close Combat Specialist Icon">
+                    <img class="talents-icon assault-one assault-two" src="assets/images/soldier-talents/assault/LW_AbilityCloseCombatSpecialist.png" alt="Close Combat Specialist Icon">
                     <p>Close Combat Specialist</p>
                 </div>
             </div>
-            <div class="col-3 talents-box">
+            <div class="col-3 talents-box talent-box-last">
                 <div>
                     <img class="talents-icon" src="assets/images/soldier-talents/assault/UIPerk_evasion.png" alt="Untouchable Icon">
                     <p>Untouchable</p>
@@ -466,7 +623,7 @@
         <!-----Master Sergeant-------->
         <div class="row">
             <div class="col-3 talents-box">
-                <img class="talents-icon" src="assets/images/soldier-ranks/XCOM2_rank_fieldmarshall.png" alt="Master Sergeant rank symbol">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_fieldmarshall.png" alt="Master Sergeant rank symbol">
                 <p>Master Sergeant</p>
             </div>
             <div class="col-3 talents-box">
@@ -481,15 +638,14 @@
                     <p>Chain Lightning</p>
                 </div>
             </div>
-            <div class="col-3 talents-box">
+            <div class="col-3 talents-box talent-box-last">
                 <div>
-                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityKinetic.png" alt="Lethal Icon">
+                    <img class="talents-icon assault-one assault-two" src="assets/images/soldier-talents/assault/LW_AbilityKinetic.png" alt="Lethal Icon">
                     <p>Lethal</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
+        <div class="row">
             <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
                 
             </div>
@@ -509,31 +665,2762 @@
                 </div>
             </div>
         </div>
-<!--------------------Reset Talents Button-------------------------->  
-    <div class="break"></div>
-    <div class="container reset-container-style">
+    </div>
+<!--------------------Grenadier Talents-------------------------->
+    <div class="container talents-container grenadier-talents hidden">
         <div class="row">
-            <div class="col reset-button-col">
-                <button class="button-style">Reset Talents</button>
+            <div class="col">
+                <h2>Talents</h2>
+            </div>
+        </div>
+        <!-----Squaddie-------->
+        <div class="row talents-row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/38px-XCOM2_rank_squaddie.png" alt="Squaddie rank symbol">
+                <p>Squaddie</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/grenadier/UIPerk_grenade_launcher.png" alt="Grenade Launcher Icon">
+                    <p>Launch Grenade</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div></div>
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>The Grenadier uses a grenade launcher to fire grenades rather than throwing them. This allows for greater range and grenade capacity.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info  hidden">
+                <div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Lance Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_lieutenant.png" alt="Lance Corporal rank symbol">
+                <p>Lance Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon grenadier-one" src="assets/images/soldier-talents/grenadier/LW_AbilitySapper.png" alt="Sapper Icon">
+                    <p>Sapper</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/grenadier/LW_AbilityNeedleGrenades.png" alt="Needle Grenades Icon">
+                    <p>Needle Grenades</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon grenadier-two" src="assets/images/soldier-talents/grenadier/LW_AbilityRapidDeployment.png" alt="Rapid Deployment Icon">
+                    <p>Rapid Deployment</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your explosives can destroy many cover objects.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your explosives do not destroy loot when they kill enemies.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Activate this ability before throwing or launching a support grenade, and the throw will not cost an action.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_sergeant.png" alt="Corporal rank symbol">
+                <p>Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon grenadier-one" src="assets/images/soldier-talents/grenadier/UIPerk_aceinthehole.png" alt="Heavy Ordinance Icon">
+                    <p>Heavy Ordinance</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityCenterMass.png" alt="Center Mass Icon">
+                    <p>Center Mass</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon grenadier-two" src="assets/images/soldier-talents/grenadier/LW_AbilityProtector.png" alt="Protector Icon">
+                    <p>Protector</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Any damaging grenade in your grenade-only slot gains a bonus use.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You do one additional point of base damage when using guns.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Non-damaging grenades in your grenade-only slot gain a bonus use.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_captain.png" alt="Sergeant rank symbol">
+                <p>Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/grenadier/LW_AbilityHeavyFrags.png" alt="Boosted Cores Icon">
+                    <p>Boosted Cores</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon grenadier-one grenadier-two" src="assets/images/soldier-talents/cross-class/UIPerk_extrapadding.png" alt="Formidable Icon">
+                    <p>Formidable</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/grenadier/LW_AbilityBluescreenBombs.png" alt="Bluescreen Bombs Icon">
+                    <p>Bluescreen Bombs</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Explosive grenades do one additional damage.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your gear includes an extra layer of protection, granting two extra points of Ablative HP and 50% less damage from explosive attacks.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your flashbang grenades now disorient robotic units and reduce their resistance to hacking.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Staff Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_major.png" alt="Staff Sergeant rank symbol">
+                <p>Staff Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon grenadier-one" src="assets/images/soldier-talents/grenadier/LW_AbilityHEATWarheads.png" alt="HEAT Warheads Icon">
+                    <p>HEAT Warheads</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon grenadier-two" src="assets/images/soldier-talents/grenadier/LW_AbilityTandemWarheads.png" alt="Tandem Warheads Icon">
+                    <p>Tandem Warheads</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/grenadier/LW_AbilityDenseSmoke.png" alt="Dense Smoke Icon">
+                    <p>Dense Smoke</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your grenades now pierce up to 2 points of armor and shred one additional point of armor.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your grenades and rockets do full damage to units to the maximum extent of their area of effect.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your smoke grenades confer an additional 10 defense.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Tech Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_colonel.png" alt="Tech Sergeant rank symbol">
+                <p>Tech Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon grenadier-one" src="assets/images/soldier-talents/cross-class/UIPerk_bigbooms.png" alt="Biggest Booms Icon">
+                    <p>Biggest Booms</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/grenadier/UIPerk_chainshot.png" alt="Chain Shot Icon">
+                    <p>Chain Shot</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon grenadier-two" src="assets/images/soldier-talents/grenadier/LW_AbilityStunGrenades.png" alt="Sting Grenades Icon">
+                    <p>Sting Grenades</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your grenades and standard rockets can inflict critical damage (50% chance for +2 damage).</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Take a shot with an aim penalty of -10. If you hit the target, you take another shot on the target automatically.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your flashbang grenades have a 50% chance to stun enemies for one turn in the flashbang's Area of Effect.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Gunnery Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_commander.png" alt="Gunnery Sergeant rank symbol">
+                <p>Gunnery Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/grenadier/UIPerk_volatilemix.png" alt="Volatile Mix Icon">
+                    <p>Volatile Mix</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/grenadier/LW_AbilityBombard.png" alt="Bombardier Icon">
+                    <p>Bombardier</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon grenadier-one grenadier-two" src="assets/images/soldier-talents/cross-class/UIPerk_salvo.png" alt="Salvo Icon">
+                    <p>Salvo</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your grenades' area of effect is increased by one tile.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You may throw or launch grenades two additional tiles.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Launching or throwing grenades, using heavy weapons or using the Gauntlet's Rocket Launcher with your first action will not end your turn.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Master Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_fieldmarshall.png" alt="Master Sergeant rank symbol">
+                <p>Master Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/grenadier/LW_AbilityCombatEngineer.png" alt="Combat Engineer Icon">
+                    <p>Combat Engineer</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon grenadier-one grenadier-two" src="assets/images/soldier-talents/grenadier/LW_AbilityFullKit.png" alt="Full Kit Icon">
+                    <p>Full Kit</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/grenadier/UIPerk_ghost.png" alt="Ghost Grenade Icon">
+                    <p>Ghost Grenade</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your explosives do significantly greater damage to cover objects and other things on the battlefield.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Grants +1 charge per grenade item in a utility slot.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>A specialized smoke grenade that causes the targeted ally to enter concealment.</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="break"></div>
+
+<!--------------------Gunner Talents-------------------------->
+    <div class="container talents-container gunner-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Talents</h2>
+            </div>
+        </div>
+        <!-----Squaddie-------->
+        <div class="row talents-row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/38px-XCOM2_rank_squaddie.png" alt="Squaddie rank symbol">
+                <p>Squaddie</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/gunner/LW_AbilityKnifeFighter.png" alt="Knife Fighter Icon">
+                    <p>Knife Fighter</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/cross-class/UIPerk_supression.png" alt="Suppression Icon">
+                    <p>Suppression</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/gunner/LW_AreaSuppression.png" alt="Area Suppression Icon">
+                    <p>Area Suppression</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You may make a melee attack with your knife against adjacent enemies.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire a barrage that pins down a target, grants reaction fire against it if it moves, restricts the use of many abilities, and imposes a -25 penalty to the target's aim.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info  hidden">
+                <div>
+                    <p>Fire a barrage that pins down multiple targets within a 4-tile radius, granting reaction fire against anyone that moves, and imposing a -25 penalty to all targets' aim until suppression is removed. Cannot be used when concealed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Lance Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_lieutenant.png" alt="Lance Corporal rank symbol">
+                <p>Lance Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon gunner-one gunner-two" src="assets/images/soldier-talents/cross-class/LW_AbilityCenterMass.png" alt="Center Mass Icon">
+                    <p>Center Mass</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityCombatives.png" alt="Combatives Icon">
+                    <p>Combatives</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/gunner/LW_AbilityGrazingFire.png" alt="Grazing Fire Icon">
+                    <p>Grazing Fire</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You do one additional point of base damage when using guns.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You may parry melee attacks and counterattack with your combat knife. Also gain +10 dodge.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Missed shots with your primary weapon have an additional roll to become a graze.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_sergeant.png" alt="Corporal rank symbol">
+                <p>Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/gunner/LW_AbilityFlush.png" alt="Flush Icon">
+                    <p>Flush</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon gunner-one" src="assets/images/soldier-talents/cross-class/UIPerk_extrapadding.png" alt="Formidable Icon">
+                    <p>Formidable</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon gunner-two" src="assets/images/soldier-talents/gunner/LW_AbilityLockdown.png" alt="Lockdown Icon">
+                    <p>Lockdown</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Special shot with a bonus to hit that does little damage but forces target to change position if it hits and gives a penalty to defense and dodge.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your gear includes an extra layer of protection, granting two extra points of Ablative HP and 50% less damage from explosive attacks.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain +15 to hit against enemies who attempt to move when suppressed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_captain.png" alt="Sergeant rank symbol">
+                <p>Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon gunner-one " src="assets/images/soldier-talents/gunner/UIPerk_hailofbullets.png" alt="Hail of Bullets Icon">
+                    <p>Hail of Bullets</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_shredder.png" alt="Shredder Icon">
+                    <p>Shredder</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon gunner-two" src="assets/images/soldier-talents/gunner/LW_AbilityMayhem.png" alt="Mayhem Icon">
+                    <p>Mayhem</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Unleash a hail of bullets that is guaranteed to hit your target, but uses a lot of ammunition.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your primary weapon attacks shred armor.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain 25% bonus damage against enemies who attempt to move when suppressed.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Staff Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_major.png" alt="Staff Sergeant rank symbol">
+                <p>Staff Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/grenadier/UIPerk_chainshot.png" alt="Chain Shot Icon">
+                    <p>Chain Shot</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/gunner/LW_AbilityIronCurtain.png" alt="Iron Curtain Icon">
+                    <p>Iron Curtain</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon gunner-one gunner-two" src="assets/images/soldier-talents/gunner/UIPerk_demolition.png" alt="Demolition Icon">
+                    <p>Demolition</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Take a shot with an aim penalty of -10. If you hit the target, you take another shot on the target automatically.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Special shot that does half damage but reduces target mobility for the following two turns. Cone-based attack with primary weapon.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Unleash a volley of bullets at your target's cover, significantly damaging or destroying it. Deals no damage to your target.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Tech Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_colonel.png" alt="Tech Sergeant rank symbol">
+                <p>Tech Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon gunner-one" src="assets/images/soldier-talents/gunner/LW_AbilityCyclicFire.png" alt="Cyclic Fire Icon">
+                    <p>Cyclic Fire</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon gunner-two" src="assets/images/soldier-talents/gunner/LW_AbilityDangerZone.png" alt="Danger Zone Icon">
+                    <p>Danger Zone</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_coolpressure.png" alt="Cool Under Pressure Icon">
+                    <p>Cool Under Pressure</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Special Shot: Fire three shots at a target in a single attack. Requires both actions and all shots have aim penalties. Four-turn cooldown.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Area Suppression suppresses enemies in a 5-tile radius.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You gain +10 Aim on Overwatch and other reaction shots, and they can critically hit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Gunnery Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_commander.png" alt="Gunnery Sergeant rank symbol">
+                <p>Gunnery Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon gunner-one gunner-two" src="assets/images/soldier-talents/gunner/UIPerk_bulletshred.png" alt="Rupture Icon">
+                    <p>Rupture</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_rapidfire.png" alt="Rapid Fire Icon">
+                    <p>Rapid Fire</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/gunner/UIPerk_killzone.png" alt="Kill Zone Icon">
+                    <p>Kill Zone</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>A Rupture shot has a large bonus to crit chance and ensures that the target takes an additional +3 damage from all attacks in the future.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire twice in a row at an enemy. Each shot suffers an Aim penalty of -15. There is no cooldown on this ability.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Take a reaction shot against any enemy that moves or attacks within a cone of fire.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Master Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_fieldmarshall.png" alt="Master Sergeant rank symbol">
+                <p>Master Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/gunner/UIPerk_saturationfire.png" alt="Saturation Fire Icon">
+                    <p>Saturation Fire</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon gunner-two" src="assets/images/soldier-talents/cross-class/LW_AbilityExtraConditioning.png" alt="Combat Fitness Icon">
+                    <p>Combat Fitness</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon gunner-one" src="assets/images/soldier-talents/gunner/LW_AbilityTraverseFire.png" alt="Traverse Fire Icon">
+                    <p>Traverse Fire</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire a cone-shaped barrage of bullets at every enemy in an area. In addition, the cover of those enemies can be damaged or destroyed. Uses a lot of ammunition.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain 4 aim, 1 mobility, 2 HP, 4 will, and 4 dodge.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>After taking a standard shot with your primary weapon with your first action, you may take an additional non-movement action.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------------Ranger Talents-------------------------->
+    <div class="container talents-container ranger-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Talents</h2>
+            </div>
+        </div>
+        <!-----Squaddie-------->
+        <div class="row talents-row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/38px-XCOM2_rank_squaddie.png" alt="Squaddie rank symbol">
+                <p>Squaddie</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/ranger/LW_AbilityPointBlank.png" alt="Point Blank Icon">
+                    <p>Point Blank</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/ranger/LW_AbilityBothBarrels.png" alt="Both Barrels Icon">
+                    <p>Both Barrels</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/ranger/LW_AbilityLightEmUp.png" alt="Light 'Em Up Icon">
+                    <p>Light 'Em Up</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire your sawed-off shotgun at a nearby enemy.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire both barrels of sawed-off shotgun at nearby enemy, doing double damage.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info  hidden">
+                <div>
+                    <p>Taking a standard shot with your primary weapon as your first action no longer ends your turn.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Lance Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_lieutenant.png" alt="Lance Corporal rank symbol">
+                <p>Lance Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/ranger/UIPerk_burstfire.png" alt="Walk Fire Icon">
+                    <p>Walk Fire</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/assault/LW_AbilityCloseAndPersonal.png" alt="Close and Personal Icon">
+                    <p>Close and Personal</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon ranger-one ranger-two" src="assets/images/soldier-talents/cross-class/UIPerk_evervigilant.png" alt="Ever Vigilant Icon">
+                    <p>Ever Vigilant</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Take a highly accurate shot with +30 bonus to hit but for half damage and -30 crit. Uses 2 ammo.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Confers +30 critical chance against adjacent targets. The bonus declines with distance from the target.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>If you spend all of your actions on moves, you are granted an automatic overwatch shot at the end of the turn.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_sergeant.png" alt="Corporal rank symbol">
+                <p>Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon ranger-one ranger-two" src="assets/images/soldier-talents/ranger/LW_AbilityLockedOn.png" alt="Locked On Icon">
+                    <p>Locked On</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/ranger/LW_AbilityPumpAction.png" alt="Pump Action Icon">
+                    <p>Pump Action</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/ranger/UIPerk_coverfire.png" alt="Covering Fire Icon">
+                    <p>Covering Fire</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain +10 aim and +10 crit for successive shots at the same enemy unit.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain two extra ammo in your sawed-off shotgun.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Overwatch shots can now be triggered by any enemy action, not just movement. Targets of overwatch shots receive -10 aim for the rest of the turn whether or not the shot was triggered because of this ability.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_captain.png" alt="Sergeant rank symbol">
+                <p>Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityAggression.png" alt="Aggression Icon">
+                    <p>Aggression</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon ranger-one" src="assets/images/soldier-talents/cross-class/LW_AbilityCenterMass.png" alt="Center Mass Icon">
+                    <p>Center Mass</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon ranger-two" src="assets/images/soldier-talents/cross-class/UIPerk_coolpressure.png" alt="Cool Under Pressure Icon">
+                    <p>Cool Under Pressure</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain +5 critical chance for each enemy you can see, up to a maximum of 30.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You do one additional point of base damage when using guns.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You gain +10 Aim on Overwatch and other reaction shots, and they can critically hit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Staff Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_major.png" alt="Staff Sergeant rank symbol">
+                <p>Staff Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon ranger-one" src="assets/images/soldier-talents/cross-class/LW_AbilityExecutioner.png" alt="Executioner Icon">
+                    <p>Executioner</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon ranger-two" src="assets/images/soldier-talents/cross-class/LW_AbilityFortify.png" alt="Fortify Icon">
+                    <p>Fortify</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_supression.png" alt="Suppression Icon">
+                    <p>Suppression</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Confers +10 aim and +10 critical chance against targets at half or less of their original hit points.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Activate to grant +20 defense until the beginning of the next turn. Does not cost an action. Has a 5-turn cooldown.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire a barrage that pins down a target, grants reaction fire against it if it moves, restricts the use of many abilities, and imposes a -25 penalty to the target's aim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Tech Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_colonel.png" alt="Tech Sergeant rank symbol">
+                <p>Tech Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon ranger-one" src="assets/images/soldier-talents/cross-class/LW_AbilityBringEmOn.png" alt="Bring 'Em On Icon">
+                    <p>Bring 'Em On</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/ranger/UIPerk_implacable.png" alt="Implacable Icon">
+                    <p>Implacable</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon ranger-two" src="assets/images/soldier-talents/gunner/LW_AbilityGrazingFire.png" alt="Grazing Fire Icon">
+                    <p>Grazing Fire</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain +1 damage on critical hits for every two enemies you can see, up to a maximum of +8.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>If you score one or more kills on your turn, you are granted a single bonus move.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Missed shots with your primary weapon have an additional roll to become a graze.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Gunnery Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_commander.png" alt="Gunnery Sergeant rank symbol">
+                <p>Gunnery Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_rapidfire.png" alt="Rapid Fire Icon">
+                    <p>Rapid Fire</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon ranger-one" src="assets/images/soldier-talents/ranger/UIPerk_tacticalsense.png" alt="Tactical Sense Icon">
+                    <p>Tactical Sense</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon ranger-two" src="assets/images/soldier-talents/ranger/LW_AbilityRapidReaction3.png" alt="Rapid Reaction Icon">
+                    <p>Rapid Reaction</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire twice in a row at an enemy. Each shot suffers an Aim penalty of -15. There is no cooldown on this ability.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain 3 defense for each enemy you can see, up to a maximum of 15 defense.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>When in overwatch, each shot you hit with grants another reaction fire shot, up to a maximum of three shots. Each enemy can only be the target of one shot.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Master Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_fieldmarshall.png" alt="Master Sergeant rank symbol">
+                <p>Master Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/gunner/UIPerk_bulletshred.png" alt="Rupture Icon">
+                    <p>Rupture</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon ranger-one ranger-two" src="assets/images/soldier-talents/cross-class/LW_AbilityExtraConditioning.png" alt="Combat Fitness Icon">
+                    <p>Combat Fitness</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_killzone.png" alt="Kill Zone Icon">
+                    <p>Kill Zone</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>A Rupture shot has a large bonus to crit chance and ensures that the target takes an additional +3 damage from all attacks in the future.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain 4 aim, 1 mobility, 2 HP, 4 will, and 4 dodge.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Take a reaction shot against any enemy that moves or attacks within a cone of fire.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------------Sharpshooter Talents-------------------------->
+    <div class="container talents-container sharpshooter-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Talents</h2>
+            </div>
+        </div>
+        <!-----Squaddie-------->
+        <div class="row talents-row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/38px-XCOM2_rank_squaddie.png" alt="Squaddie rank symbol">
+                <p>Squaddie</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/sharpshooter/UIPerk_holotargeting.png" alt="Holo Targeting Icon">
+                    <p>Holo Targeting</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/sharpshooter/UIPerk_squadsight.png" alt="Squadsight Icon">
+                    <p>Squadsight</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Holotarget your enemy to grant an aim bonus to all attacks on this target by you and your allies for the remainder of the turn.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info  hidden">
+                <div>
+                    <p>You can target enemies within squadmates' sight, provided there is line of sight to the target.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Lance Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_lieutenant.png" alt="Lance Corporal rank symbol">
+                <p>Lance Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon sharpshooter-one" src="assets/images/soldier-talents/sharpshooter/UIPerk_deathfromabove.png" alt="Death From Above Icon">
+                    <p>Death From Above</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon sharpshooter-two" src="assets/images/soldier-talents/sharpshooter/LW_AbilityRapidTargeting.png" alt="Rapid Targeting Icon">
+                    <p>Rapid Targeting</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/sharpshooter/UIPerk_snapshot.png" alt="Snap Shot Icon">
+                    <p>Snap Shot</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Killing an enemy at a lower elevation with your primary weapon costs only a single action, and does not end your turn. Also grants a long-range accuracy bonus for sniper rifles.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You may Holotarget an enemy as a free action with a 4-turn cooldown. In addition, Holotargeting no longer ends your turn.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You may take standard shots with your sniper rifle after moving, but you suffer severe range penalties beyond 5 tiles of squadsight range.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_sergeant.png" alt="Corporal rank symbol">
+                <p>Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/sharpshooter/LW_AbilityDamnGoodGround.png" alt="Damn Good Ground Icon">
+                    <p>Damn Good Ground</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon sharpshooter-two" src="assets/images/soldier-talents/cross-class/UIPerk_phantom.png" alt="Phantom Icon">
+                    <p>Phantom</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon sharpshooter-one" src="assets/images/soldier-talents/cross-class/LW_AbilityCenterMass.png" alt="Center Mass Icon">
+                    <p>Center Mass</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Confers +10 aim and +10 defense against targets at a lower elevation.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>When the squad is revealed, this soldier remains concealed.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You do one additional point of base damage when using guns.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_captain.png" alt="Sergeant rank symbol">
+                <p>Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon sharpshooter-one" src="assets/images/soldier-talents/sharpshooter/LW_AbilityPrecisionShot.png" alt="Precision Shot Icon">
+                    <p>Precision Shot</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon sharpshooter-two" src="assets/images/soldier-talents/sharpshooter/LW_AbilityHDHolo.png" alt="HiDef Holo Icon">
+                    <p>HiDef Holo</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityLoneWolf.png" alt="Lone Wolf Icon">
+                    <p>Lone Wolf</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Take a special shot with +30 bonus to critical chance and 33% bonus critical damage. Three-turn cooldown.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your Holotargeted enemies are easier to critically hit.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain +10 aim and +10 defense when 7 or more tiles distance from any ally.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Staff Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_major.png" alt="Staff Sergeant rank symbol">
+                <p>Staff Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/sharpshooter/UIPerk_long_watch.png" alt="Long Watch Icon">
+                    <p>Long Watch</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon sharpshooter-two" src="assets/images/soldier-talents/sharpshooter/LW_AbilityIndependentTracking.png" alt="Independent Tracking Icon">
+                    <p>Independent Tracking</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon sharpshooter-one" src="assets/images/soldier-talents/cross-class/LW_AbilityLowProfile.png" alt="Low Profile Icon">
+                    <p>Low Profile</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Allow Overwatch to trigger with Squadsight.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>A Holotargeted enemy will remain so for 1 additional turn(s)</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Makes partial cover count as full.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Tech Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_colonel.png" alt="Tech Sergeant rank symbol">
+                <p>Tech Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/sharpshooter/UIPerk_deadeye.png" alt="Deadeye Icon">
+                    <p>Deadeye</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon sharpshooter-two" src="assets/images/soldier-talents/sharpshooter/LW_AbilityVitalPointTargeting.png" alt="Vital Point Tracking Icon">
+                    <p>Vital Point Tracking</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon sharpshooter-one" src="assets/images/soldier-talents/cross-class/LW_AbilityAggression.png" alt="Aggression Icon">
+                    <p>Aggression</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Take a shot with a small aim penalty for a significant damage boost.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Attacks against your Holotargeted enemies deal more damage.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain +5 critical chance for each enemy you can see, up to a maximum of 30.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Gunnery Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_commander.png" alt="Gunnery Sergeant rank symbol">
+                <p>Gunnery Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon sharpshooter-one" src="assets/images/soldier-talents/sharpshooter/LW_AbilityKubikuri.png" alt="Kubikuri Icon">
+                    <p>Kubikuri</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon sharpshooter-two" src="assets/images/soldier-talents/sharpshooter/LW_AbilityMultiTargeting.png" alt="Multi Targeting Icon">
+                    <p>Multi Targeting</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/sharpshooter/UIPerk_hunter.png" alt="Hunter's Instincts Icon">
+                    <p>Hunter's Instincts</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Special shot against most enemies who have taken any damage: Any critical hit kills them, but regular hits do half damage. Requires two actions and has a 4-turn cooldown.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You may Holotarget multiple enemies with a 2-turn cooldown.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Ranged attacks against flanked enemies deal +2 damage.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Master Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_fieldmarshall.png" alt="Master Sergeant rank symbol">
+                <p>Master Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/sharpshooter/LW_AbilityDoubleTap.png" alt="Double Tap Icon">
+                    <p>Double Tap</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon sharpshooter-two" src="assets/images/soldier-talents/sharpshooter/LW_AbilityAMF.png" alt="Alpha Mike Foxtrot Icon">
+                    <p>Alpha Mike Foxtrot</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon sharpshooter-one" src="assets/images/soldier-talents/sharpshooter/UIPerk_inthezone.png" alt="Serial Icon">
+                    <p>Serial</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire a standard shot and gain a bonus shot or overwatch action.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You do 4 additional points of base damage and 2 additional points of crit damage with your primary weapon.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>A powerful chained shot ability. For every kill made with your primary weapon, your actions will be refunded but your damage and crit chance will be reduced for every subsequent attack.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------------Shinobi Talents-------------------------->
+    <div class="container talents-container shinobi-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Talents</h2>
+            </div>
+        </div>
+        <!-----Squaddie-------->
+        <div class="row talents-row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/38px-XCOM2_rank_squaddie.png" alt="Squaddie rank symbol">
+                <p>Squaddie</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/cross-class/UIPerk_phantom.png" alt="Phantom Icon">
+                    <p>Phantom</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/shinobi/LW_AbilityFleche.png" alt="Fleche Icon">
+                    <p>Fleche</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/shinobi/UIPerk_swordSlash.png" alt="Slash Icon">
+                    <p>Slash</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>When the squad is revealed, this soldier remains concealed.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Attack any enemy within movement range with your sword. Deals +1 damage for every 4 tiles between your starting position and the target.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info  hidden">
+                <div>
+                    <p>Attack an adjacent target with your sword. Uses one action.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Lance Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_lieutenant.png" alt="Lance Corporal rank symbol">
+                <p>Lance Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon shinobi-one" src="assets/images/soldier-talents/shinobi/LW_AbilityGhostwalker.png" alt="Ghostwalker Icon">
+                    <p>Ghostwalker</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityLoneWolf.png" alt="Lone Wolf Icon">
+                    <p>Lone Wolf</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon shinobi-two" src="assets/images/soldier-talents/shinobi/UIPerk_momentum.png" alt="Blademaster Icon">
+                    <p>Blademaster</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Activate this ability to reduce enemy detection range against you by 25% for the rest of your turn as well as the following turn. Four-turn cooldown.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain +10 aim and +10 defense when 7 or more tiles distance from any ally.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>All sword attacks deal +1 extra damage and have +10 Aim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_sergeant.png" alt="Corporal rank symbol">
+                <p>Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/shinobi/UIPerk_shadowstep.png" alt="Shadowstep Icon">
+                    <p>Shadowstep</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityExecutioner.png" alt="Executioner Icon">
+                    <p>Executioner</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon shinobi-one shinobi-two" src="assets/images/soldier-talents/cross-class/LW_AbilityCombatives.png" alt="Combatives Icon">
+                    <p>Combatives</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>This soldier does not trigger overwatch or reaction fire.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Confers +10 aim and +10 critical chance against targets at half or less of their original hit points.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You may parry melee attacks and counterattack with your combat knife. Also gain +10 dodge.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_captain.png" alt="Sergeant rank symbol">
+                <p>Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon shinobi-one" src="assets/images/soldier-talents/shinobi/LW_AbilityCovert.png" alt="Precision Shot Icon">
+                    <p>Covert</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon shinobi-two" src="assets/images/soldier-talents/shinobi/LW_AbilityHardTarget.png" alt="HiDef Holo Icon">
+                    <p>Hard Target</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/shinobi/LW_AbilityCutthroat.png" alt="Lone Wolf Icon">
+                    <p>Cutthroat</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Enemies have 25% smaller detection range against you.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain 3 dodge per enemy you can see, up to a maximum of +30.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your melee attacks against biological enemies ignore their armor, have a +15 critical chance, and do +2 critical damage.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Staff Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_major.png" alt="Staff Sergeant rank symbol">
+                <p>Staff Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/shinobi/UIPerk_shadowstrike.png" alt="Shadowstrike Icon">
+                    <p>Shadowstrike</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/LW_AbilityLowProfile.png" alt="Low Profile Icon">
+                    <p>Low Profile</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon shinobi-one shinobi-two" src="assets/images/soldier-talents/shinobi/UIPerk_bladestorm.png" alt="Bladestorm Icon">
+                    <p>Bladestorm</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>While concealed, gain +50 bonus aim and +50 bonus critical hit chance when attacking enemies.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Makes partial cover count as full.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Free sword attacks on any enemies that enter or attack from melee range.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Tech Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_colonel.png" alt="Tech Sergeant rank symbol">
+                <p>Tech Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/sharpshooter/UIPerk_hunter.png" alt="Hunter's Instincts Icon">
+                    <p>Hunter's Instincts</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon shinobi-one" src="assets/images/soldier-talents/shinobi/LW_AbilityEvasive.png" alt="Evasive Icon">
+                    <p>Evasive</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon shinobi-two" src="assets/images/soldier-talents/shinobi/UIPerk_reaper.png" alt="Reaper Icon">
+                    <p>Reaper</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Ranged attacks against flanked enemies deal +2 damage.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Start each mission with 100 bonus dodge. The bonus is removed after you take damage for the first time.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>A devastating chain melee attack where the first melee attack cannot miss. Each melee kill in Reaper mode grants an extra action, but further melee attacks have reduced damage.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Gunnery Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_commander.png" alt="Gunnery Sergeant rank symbol">
+                <p>Gunnery Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon shinobi-one" src="assets/images/soldier-talents/shinobi/LW_AbilityTradecraft.png" alt="Tradecraft Icon">
+                    <p>Tradecraft</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/shinobi/LW_AbilityHitandRun.png" alt="Hit and Run Icon">
+                    <p>Hit and Run</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon shinobi-two" src="assets/images/soldier-talents/shinobi/UIPerk_riposte.png" alt="Whirlwind Icon">
+                    <p>Whirlwind</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>This soldier has significantly reduced infiltration times while on missions.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Once per turn, gain an additional action after taking a standard shot at a flanked or exposed target with your primary weapon.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>If you hit with a melee attack during your turn, gain a bonus move.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Master Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_fieldmarshall.png" alt="Master Sergeant rank symbol">
+                <p>Master Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon shinobi-one shinobi-two" src="assets/images/soldier-talents/shinobi/UIPerk_stealth.png" alt="Conceal Icon">
+                    <p>Conceal</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_rapidfire.png" alt="Rapid Fire Icon">
+                    <p>Rapid Fire</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/shinobi/LW_AbilityCoupdeGrace.png" alt="Coup de Grace Icon">
+                    <p>Coup de Grace</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Immediately enter concealment once per mission.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire twice in a row at an enemy. Each shot suffers an Aim penalty of -15. There is no cooldown on this ability.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Sword attacks against unconscious, stunned, panicked or disoriented enemies have +50 aim, +50 crit and deal two points of additional base damage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------------Specialist Talents-------------------------->
+    <div class="container talents-container specialist-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Talents</h2>
+            </div>
+        </div>
+        <!-----Squaddie-------->
+        <div class="row talents-row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/38px-XCOM2_rank_squaddie.png" alt="Squaddie rank symbol">
+                <p>Squaddie</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/specialist/UIPerk_aidprotocol.png" alt="Aid Protocol Icon">
+                    <p>Aid Protocol</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/specialist/UIPerk_haywireprotocol.png" alt="Haywire Protocol Icon">
+                    <p>Haywire Protocol</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/specialist/UIPerk_hack.png" alt="Hack Icon">
+                    <p>Hack</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Command your GREMLIN to move to a friendly target. It grants that target a bonus to Defense until the start of the next player turn.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You may target robotic and mechanical enemies with your GREMLIN, attempting to hack them and seize control.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info  hidden">
+                <div>
+                    <p>Attempt to remotely breach security on a network access point with your GREMLIN.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Lance Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_lieutenant.png" alt="Lance Corporal rank symbol">
+                <p>Lance Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon specialist-one" src="assets/images/soldier-talents/specialist/UIPerk_revivalprotocol.png" alt="Revival Protocol Icon">
+                    <p>Revival Protocol</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon specialist-two" src="assets/images/soldier-talents/specialist/LW_AbilitySentinel.png" alt="Sentinel Icon">
+                    <p>Sentinel</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/specialist/UIPerk_combatprotocol.png" alt="Combat Protocol Icon">
+                    <p>Combat Protocol</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Send the GREMLIN to an ally to remove any negative mental status effects: Disoriented, Stunned, Panicked, or Unconscious.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>When in overwatch, you may take two reaction shots.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Send the GREMLIN to an enemy to jolt them, dealing guaranteed damage, which is increased against robotic enemies.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_sergeant.png" alt="Corporal rank symbol">
+                <p>Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon specialist-one specialist-two" src="assets/images/soldier-talents/specialist/LW_AbilityFieldSurgeon.png" alt="Field Surgeon Icon">
+                    <p>Field Surgeon</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/ranger/UIPerk_coverfire.png" alt="Covering Fire Icon">
+                    <p>Covering Fire</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/specialist/LW_AbilityInterference.png" alt="Interference Icon">
+                    <p>Interference</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Reduce wound recovery times for most soldiers.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Overwatch shots can now be triggered by any enemy action, not just movement. Targets of overwatch shots receive -10 aim for the rest of the turn whether or not the shot was triggered because of this ability.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>GREMLIN cancels overwatch on targeted unit. Use three times per battle. Number of uses is increased with advanced GREMLINs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_captain.png" alt="Sergeant rank symbol">
+                <p>Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon specialist-one" src="assets/images/soldier-talents/specialist/UIPerk_medicalprotocol.png" alt="Medical Protocol Icon">
+                    <p>Medical Protocol</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/specialist/UIPerk_sensorsweep.png" alt="Scanning Protocol Icon">
+                    <p>Scanning Protocol</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon specialist-two" src="assets/images/soldier-talents/specialist/LW_AbilityTrojan.png" alt="Trojan Icon">
+                    <p>Trojan</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>The GREMLIN can perform healing actions remotely: GREMLIN Heal and GREMLIN Stabilize. The GREMLIN has a single charge. If a medikit is equipped, the GREMLIN will gain an additional charge.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>The GREMLIN can trigger an instant scan of the area, increasing the Specialist's sight radius substantially for one turn, and revealing any hidden or disguised enemies in view.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Enemy units that are hacked take damage and lose their actions on the turn the hack effect ends.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Staff Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_major.png" alt="Staff Sergeant rank symbol">
+                <p>Staff Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/specialist/UIPerk_fieldmedic.png" alt="Field Medic Icon">
+                    <p>Field Medic</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon specialist-two" src="assets/images/soldier-talents/cross-class/UIPerk_evervigilant.png" alt="Ever Vigilant Icon">
+                    <p>Ever Vigilant</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon specialist-one" src="assets/images/soldier-talents/specialist/LW_AbilityAirdrop.png" alt="Airdrop Icon">
+                    <p>Airdrop</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Equipped medikits have 2 extra charges.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>If you spend all of your actions on moves, you are granted an automatic overwatch shot at the end of the turn.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>The GREMLIN grants an explosive grenade to the targeted ally. Use twice per mission.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Tech Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_colonel.png" alt="Tech Sergeant rank symbol">
+                <p>Tech Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon specialist-one" src="assets/images/soldier-talents/specialist/LW_AbilitySavior.png" alt="Savior Icon">
+                    <p>Savior</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_coolpressure.png" alt="Cool Under Pressure Icon">
+                    <p>Cool Under Pressure</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon specialist-two" src="assets/images/soldier-talents/specialist/LW_AbilityFailsafe.png" alt="Failsafe Icon">
+                    <p>Failsafe</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Healing abilities restore four additional hit points.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>You gain +10 Aim on Overwatch and other reaction shots, and they can critically hit.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>If you fail a hack, you prevent any negative effects from occurring.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Gunnery Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_commander.png" alt="Gunnery Sergeant rank symbol">
+                <p>Gunnery Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/specialist/UIPerk_defensiveprotocol.png" alt="Rescue Protocol Icon">
+                    <p>Rescue Protocol</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/specialist/UIPerk_threat_assesment.png" alt="Threat Assessment Icon">
+                    <p>Threat Assessment</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon specialist-one specialist-two" src="assets/images/soldier-talents/specialist/LW_AbilityFullOverride.png" alt="Full Override Icon">
+                    <p>Full Override</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Use your Gremlin to grant a movement action to an ally.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Aid Protocol now grants the target a Covering Fire Overwatch shot.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Take permanent control of a robotic unit and potentially acquire ADVENT MECs for the Resistance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Master Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_fieldmarshall.png" alt="Master Sergeant rank symbol">
+                <p>Master Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon specialist-one" src="assets/images/soldier-talents/specialist/UIPerk_restorative_mist.png" alt="Restoration Icon">
+                    <p>Restoration</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_killzone.png" alt="Kill Zone Icon">
+                    <p>Kill Zone</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon specialist-two" src="assets/images/soldier-talents/specialist/UIPerk_capacitordischarge.png" alt="Capacitor Discharge Icon">
+                    <p>Capacitor Discharge</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>The GREMLIN flies to each squad member, healing or reviving them as needed.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Take a reaction shot against any enemy that moves or attacks within a cone of fire.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Send the GREMLIN to a location where it emits a substantial electric discharge, damaging and potentially stunning all nearby units. Robotic units take more damage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------------Technical Talents-------------------------->
+    <div class="container talents-container technical-talents hidden">
+        <div class="row">
+            <div class="col">
+                <h2>Talents</h2>
+            </div>
+        </div>
+        <!-----Squaddie-------->
+        <div class="row talents-row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/38px-XCOM2_rank_squaddie.png" alt="Squaddie rank symbol">
+                <p>Squaddie</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon talents-always-active" src="assets/images/soldier-talents/technical/LW_AbilityHeavyArmaments.png" alt="Heavy Weapons Icon">
+                    <p>Heavy Weapons</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>This soldier is trained to use the XCOM gauntlet, a combination Rocket Launcher and Flamethrower.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info  hidden">
+                <div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Lance Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_lieutenant.png" alt="Lance Corporal rank symbol">
+                <p>Lance Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon technical-one" src="assets/images/soldier-talents/technical/LW_AbilityFireintheHole.png" alt="Fire in the Hole Icon">
+                    <p>Fire in the Hole</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_supression.png" alt="Suppression Icon">
+                    <p>Suppression</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon technical-two" src="assets/images/soldier-talents/technical/LW_AbilityRoust.png" alt="Roust Icon">
+                    <p>Roust</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your rockets are more accurate.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire a barrage that pins down a target, grants reaction fire against it if it moves, restricts the use of many abilities, and imposes a -25 penalty to the target's aim.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Special Flamethrower shot that does limited damage but forces enemies to change their position.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Corporal-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_sergeant.png" alt="Corporal rank symbol">
+                <p>Corporal</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_bigbooms.png" alt="Biggest Booms Icon">
+                    <p>Biggest Booms</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon technical-one" src="assets/images/soldier-talents/cross-class/LW_AbilityFortify.png" alt="Fortify Icon">
+                    <p>Fortify</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon technical-two" src="assets/images/soldier-talents/technical/LW_AbilityNapalmX.png" alt="Napalm-X Icon">
+                    <p>Napalm-X</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your grenades and standard rockets can inflict critical damage (50% chance for +2 damage).</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Activate to grant +20 defense until the beginning of the next turn. Does not cost an action. Has a 5-turn cooldown.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your Flamethrower can now disorient or panic enemies.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_captain.png" alt="Sergeant rank symbol">
+                <p>Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/technical/LW_AbilityConcussionRocket.png" alt="Concussion Rocket Icon">
+                    <p>Concussion Rocket</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon technical-one" src="assets/images/soldier-talents/cross-class/UIPerk_shredder.png" alt="Shredder Icon">
+                    <p>Shredder</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon technical-two" src="assets/images/soldier-talents/technical/LW_AbilityIgnition.png" alt="Burnout Icon">
+                    <p>Burnout</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire a special rocket that does limited damage but has a chance to stun or disorient organic enemies within its area of effect and leaves a cloud of smoke.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your primary weapon attacks shred armor.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Activating your Flamethrower leaves a small smoke cloud around your position, providing a defensive bonus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Staff Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_major.png" alt="Staff Sergeant rank symbol">
+                <p>Staff Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/grenadier/LW_AbilityTandemWarheads.png" alt="Tandem Warheads Icon">
+                    <p>Tandem Warheads</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon technical-one technical-two" src="assets/images/soldier-talents/cross-class/UIPerk_extrapadding.png" alt="Formidable Icon">
+                    <p>Formidable</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/technical/LW_AbilityPhosphorus.png" alt="Phosphorus Icon">
+                    <p>Phosphorus</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your grenades and rockets do full damage to units to the maximum extent of their area of effect.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your gear includes an extra layer of protection, granting two extra points of Ablative HP and 50% less damage from explosive attacks.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your flamethrower can now damage mechanical units and shreds armor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Tech Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_colonel.png" alt="Tech Sergeant rank symbol">
+                <p>Tech Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon technical-one" src="assets/images/soldier-talents/technical/LW_AbilityJavelinRockets.png" alt="Javelin Rockets Icon">
+                    <p>Javelin Rockets</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/technical/LW_AbilityFireandSteel.png" alt="Fire and Steel Icon">
+                    <p>Fire and Steel</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon technical-two" src="assets/images/soldier-talents/technical/LW_AbilityHighPressure.png" alt="Incinerator Icon">
+                    <p>Incinerator</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>The range of your rockets is increased by 6 tiles and you may hit targets beyond your visual range.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Attacks with your gauntlet, and fires set by gauntlet weapons, do +1 damage.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Your flamethrower has an increased range of one tile and covers a wider area of effect.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Gunnery Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_commander.png" alt="Gunnery Sergeant rank symbol">
+                <p>Gunnery Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon technical-one" src="assets/images/soldier-talents/cross-class/UIPerk_salvo.png" alt="Salvo Icon">
+                    <p>Salvo</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/technical/UIPerk_tacticalsense.png" alt="Tactical Sense Icon">
+                    <p>Tactical Sense</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon technical-two" src="assets/images/soldier-talents/technical/LW_AbilityQuickBurn.png" alt="Quickburn Icon">
+                    <p>Quickburn</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Launching or throwing grenades, using heavy weapons or using the Gauntlet's Rocket Launcher with your first action will not end your turn.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Gain 3 defense for each enemy you can see, up to a maximum of 15 defense.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Activate so your next use of the flamethrower will not cost an action.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row talents-border"></div>
+        <!-----Master Sergeant-------->
+        <div class="row">
+            <div class="col-3 talents-box">
+                <img class="rank-icon" src="assets/images/soldier-ranks/XCOM2_rank_fieldmarshall.png" alt="Master Sergeant rank symbol">
+                <p>Master Sergeant</p>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon technical-one technical-two" src="assets/images/soldier-talents/technical/UIPerk_heavy_rockets.png" alt="Bunker Buster Icon">
+                    <p>Bunker Buster</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/cross-class/UIPerk_rapidfire.png" alt="Rapid Fire Icon">
+                    <p>Rapid Fire</p>
+                </div>
+            </div>
+            <div class="col-3 talents-box talent-box-last">
+                <div>
+                    <img class="talents-icon" src="assets/images/soldier-talents/technical/LW_AbilityFirestorm.png" alt="Firestorm Icon">
+                    <p>Firestorm</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=".d-sm-none .d-md-none col-md-3 talents-box-info hidden">
+                
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire a special rocket that destroys buildings and other objects in the environment.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Fire twice in a row at an enemy. Each shot suffers an Aim penalty of -15. There is no cooldown on this ability.</p>
+                </div>
+            </div>
+            <div class="col-9 col-md-3 talents-box-info hidden">
+                <div>
+                    <p>Once per battle, attack all units in a complete circle around the soldier's position. Also grants immunity to fire damage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------------Reset Talents Button-------------------------->  
+    
+    <div class="container reset-container-style assault-talents grenadier-talents gunner-talents ranger-talents sharpshooter-talents shinobi-talents specialist-talents technical-talents hidden">
+        <div class="break"></div>
+        <div class="row">
+            <div class="col reset-button-col">
+                <button class="button-style talents-reset-button">Reset Talents</button>
+            </div>
+        </div>
+         <div class="break"></div>
+    </div>
+   
 <!--------------------Youtube Embedded--------------------------> 
-    <div class="container talents-container assault-talents">
+    <!--------assault--------->
+    <div class="container talents-container assault-talents hidden">
         <div class="row">
             <div class="col youtube-col">
-                <h2>Need More Help Selecting?</h2>
-                <p>Check out Jorbs video below which gives a breakdown of the early game talents</p>
+                <h2>Need More Help Selecting Talents?</h2>
+                <p>Check out Jorbs video below which gives a breakdown of the early game Assault talents</p>
                 <iframe class="youtube-video" src="https://www.youtube.com/embed/h3SPxIwsS3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
                 <p>For the videos videos covering the later talents you can find them here:</p>
-                <a href="https://www.youtube.com/watch?v=1FbIy1_ue-Y&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=11" target="_blank">
-                    <p>Mid Game Assaults</p>
-                </a>
-                <a href="https://www.youtube.com/watch?v=1FbIy1_ue-Y&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=11" target="_blank">
-                    <p>Late Game Assaults</p>
-                </a>
+                <a href="https://www.youtube.com/watch?v=1FbIy1_ue-Y&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=11" target="_blank"><div class="button-style link-button">Mid Game Assaults</div></a>
+                <a href="https://www.youtube.com/watch?v=rj5RfdDqE8Y&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=12" target="_blank"><div class="button-style link-button">Late Game Assaults</div></a>
+            </div>
+        </div>
+    </div>
+
+    <!--------grenadier--------->
+
+    <div class="container talents-container grenadier-talents hidden">
+        <div class="row">
+            <div class="col youtube-col">
+                <h2>Need More Help Selecting Talents?</h2>
+                <p>Check out Jorbs video below which gives a breakdown of the early game Grenadier talents</p>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/3Cy-Y4dO7oA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>For the videos videos covering the later talents you can find them here:</p>
+                <a href="https://www.youtube.com/watch?v=jan1s7s07Aw&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=17" target="_blank"><div class="button-style link-button">Mid Game Grenadiers</div></a>
+                <a href="https://www.youtube.com/watch?v=mPP1-erJuxQ&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=18" target="_blank"><div class="button-style link-button">Late Game Grenadiers</div></a>
+            </div>
+        </div>
+    </div>
+
+    <!--------gunner--------->
+    
+    <div class="container talents-container gunner-talents hidden">
+        <div class="row">
+            <div class="col youtube-col">
+                <h2>Need More Help Selecting Talents?</h2>
+                <p>Check out Jorbs video below which gives a breakdown of the early game Gunner talents</p>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/I2iwn_Wh_9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>For the videos videos covering the later talents you can find them here:</p>
+                <a href="https://www.youtube.com/watch?v=JkMv42tsr3I&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=14" target="_blank"><div class="button-style link-button">Mid Game Gunners</div></a>
+                <a href="https://www.youtube.com/watch?v=oxBaGEEF2tE&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=15" target="_blank"><div class="button-style link-button">Late Game Gunners</div></a>
+            </div>
+        </div>
+    </div>
+
+    <!--------ranger--------->
+    
+    <div class="container talents-container ranger-talents hidden">
+        <div class="row">
+            <div class="col youtube-col">
+                <h2>Need More Help Selecting Talents?</h2>
+                <p>Check out Jorbs video below which gives a breakdown of the early game Ranger talents</p>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/jptfdyLGn4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>For the videos videos covering the later talents you can find them here:</p>
+                <a href="https://www.youtube.com/watch?v=CRUF-y2WICA&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=2" target="_blank"><div class="button-style link-button">Mid Game Rangers</div></a>
+                <a href="https://www.youtube.com/watch?v=TciFyuE_96o&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=3" target="_blank"><div class="button-style link-button">Late Game Rangers</div></a>
+            </div>
+        </div>
+    </div>
+
+    <!--------sharpshooter--------->
+    
+    <div class="container talents-container sharpshooter-talents hidden">
+        <div class="row">
+            <div class="col youtube-col">
+                <h2>Need More Help Selecting Talents?</h2>
+                <p>Check out Jorbs video below which gives a breakdown of the early game Sharpshooter talents</p>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/uFZlPfsAMIw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>For the videos videos covering the later talents you can find them here:</p>
+                <a href="https://www.youtube.com/watch?v=-aVDv7R_Mys&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=8" target="_blank"><div class="button-style link-button">Mid Game Sharpshooters</div></a>
+                <a href="https://www.youtube.com/watch?v=xBLzcbYkSXA&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=9" target="_blank"><div class="button-style link-button">Late Game Sharpshooters</div></a>
+            </div>
+        </div>
+    </div>
+
+    <!--------shinobi--------->
+    
+    <div class="container talents-container shinobi-talents hidden">
+        <div class="row">
+            <div class="col youtube-col">
+                <h2>Need More Help Selecting Talents?</h2>
+                <p>Check out Jorbs video below which gives a breakdown of the early game Shinobi talents</p>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/_vhuZBRPjwE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>For the videos videos covering the later talents you can find them here:</p>
+                <a href="https://www.youtube.com/watch?v=akps7lacyUU&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=23" target="_blank"><div class="button-style link-button">Mid Game Shinobis</div></a>
+                <a href="https://www.youtube.com/watch?v=LlKUeUpCo-g&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=24" target="_blank"><div class="button-style link-button">Late Game Shinobis</div></a>
+            </div>
+        </div>
+    </div>
+
+    <!--------specialist--------->
+    
+    <div class="container talents-container specialist-talents hidden">
+        <div class="row">
+            <div class="col youtube-col">
+                <h2>Need More Help Selecting Talents?</h2>
+                <p>Check out Jorbs video below which gives a breakdown of the early game Specialist talents</p>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/3qWz6XwHbQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>For the videos videos covering the later talents you can find them here:</p>
+                <a href="https://www.youtube.com/watch?v=1CHUL1jXAac&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=20" target="_blank"><div class="button-style link-button">Mid Game Specialists</div></a>
+                <a href="https://www.youtube.com/watch?v=Oq0A-xnTDpk&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=21" target="_blank"><div class="button-style link-button">Late Game Specialists</div></a>
+            </div>
+        </div>
+    </div>
+
+    <!--------technical--------->
+    
+    <div class="container talents-container technical-talents hidden">
+        <div class="row">
+            <div class="col youtube-col">
+                <h2>Need More Help Selecting Talents?</h2>
+                <p>Check out Jorbs video below which gives a breakdown of the early game Technical talents</p>
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/FUb7IM7BjX4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>For the videos videos covering the later talents you can find them here:</p>
+                <a href="https://www.youtube.com/watch?v=vSBQbDq1SGs&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=5" target="_blank"><div class="button-style link-button">Mid Game Technicals</div></a>
+                <a href="https://www.youtube.com/watch?v=QoAq-g-7buo&list=PLesIE_v8rF211FQU_x9JgA0c8v6D45GPl&index=6" target="_blank"><div class="button-style link-button">Late Game Technicals</div></a>
             </div>
         </div>
     </div>
@@ -545,8 +3432,12 @@
                 <div class="col footer-col">
                     <p>Special thanks goes to Jorbs for allowing access to his content included on the site.</p>
                     <p>Check out his other content at:</p>
-                    <a class="footer-link" href="https://www.youtube.com/channel/UCpjr4aOTbpvat8Y77e8dd_Q" target="_blank"><i class="fab fa-youtube fa-2x youtube"></i>www.youtube.com/user/JoINrbs/videos</a>
-                    <a class="footer-link" href="https://www.twitch.tv/jorbs" target="_blank"><i class="fab fa-twitch fa-2x twitch"></i>www.twitch.tv/jorbs</a>
+                    <div>
+                        <i class="fab fa-youtube fa-2x youtube"></i>
+                        <a class="footer-link" href="https://www.youtube.com/channel/UCpjr4aOTbpvat8Y77e8dd_Q" target="_blank">www.youtube.com/user/JoINrbs/videos</a>
+                        <i class="fab fa-twitch fa-2x twitch"></i>
+                        <a class="footer-link" href="https://www.twitch.tv/jorbs" target="_blank">www.twitch.tv/jorbs</a>
+                    </div>
                 </div>
             </div>
             <div class="row">
