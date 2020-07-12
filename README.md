@@ -5,7 +5,7 @@
 ## __Aim of the Site__
 
 The basic aim of the site was to offer players (new or old) to be able to plan their soldier builds for their playthrough of Xcom 2: Long War 2.
-I wanted to build a cite that had the information all in one place to cover all the questions that they might have had.
+I wanted to build a site that had the information all in one place to cover all the questions that they might have had.
 
 Additionally if players wanted a change of pace they could play on the themed memory game.
 
@@ -14,21 +14,21 @@ Please click the following link to the live website: https://baldpet.github.io/L
 
 ### __Client Stories__
 
-#### Client 1
-* 
-  * 
-  * 
-  * 
+There were a number of stories that the site was aimed at fulfilling, they are listed below:
 
-#### Client 2
-* 
-  * 
-  * 
+* "I am a beginner to Long War 2 and want learn about the classes"
+* "I am a beginner and need help getting started on a good soldier build"
+* "I am a beginner/intermediate player that is looking to build classes with some expert advice readily available on the same website"
+* "I am an intermediate/expert player who would like to plan some new soldier builds"
+* "I am looking for a themed Xcom game to pass the time"
+* "I want to play Xcom but I am away from the computer, let's play the next best thing a themed mobile friendly game"
 
 ### __Wireframes__
 
 To begin the planning of how the site would look I put together a series of wireframes inlcuded below.  
+
 During the design process a decision was made to keep the class information on one page and use javascript to relay the specific information that the user wanted quickly and easily.
+
 Regarding the memory game the challenge was how to include the number of cards required on the smaller screen of the mobile view. On this I decided to switch from 4 cards accross the screen to 2 cards.
 
 #### Desktop Wireframes
