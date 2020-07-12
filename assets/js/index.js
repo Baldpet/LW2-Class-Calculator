@@ -118,6 +118,15 @@ function talentIcon(){
     })
 }
 
+// ----- Prebuilt Talents Icons -------
+
+$(".prebuilt-talents").click(function(){
+    var preTalent = $(this).attr("id");
+    var preTalentSelect = "." + preTalent;
+    $(".talents-icon").removeClass("talents-active");
+    $(preTalentSelect).addClass("talents-active");
+})
+
 // ----- Reset -------
 
 $(".talents-reset-button").click(function(){
