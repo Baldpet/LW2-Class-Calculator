@@ -1,4 +1,4 @@
-[![homepage](https://github.com/Baldpet/visit-corfu/blob/master/assets/images/visit-corfu-logo.png)](https://baldpet.github.io/visit-corfu/)
+[![homepage](https://github.com/Baldpet/LW2-Class-Calculator/blob/master/assets/images/skulls2_faded.png)](https://baldpet.github.io/LW2-Class-Calculator/)
 
 # __LW2 Talents and Memory Game__
 
@@ -28,30 +28,19 @@ There were a number of stories that the site was aimed at fulfilling, they are l
 To begin the planning of how the site would look I put together a series of wireframes inlcuded below.  
 
 During the design process a decision was made to keep the class information on one page and use javascript to relay the specific information that the user wanted quickly and easily.
+A change was made to the mobile version of the Talents page which originally was going to have a dropdown menu for the classes. After seeing the classes in columns of two it worked well so was left like that.
 
 Regarding the memory game the challenge was how to include the number of cards required on the smaller screen of the mobile view. On this I decided to switch from 4 cards accross the screen to 2 cards.
 
 #### Desktop Wireframes
-![Index Page-Desktop](https://github.com/Baldpet/visit-corfu/blob/master/assets/wireframes/index-desktop.png)
+![Talents Desktop](https://github.com/Baldpet/LW2-Class-Calculator/blob/master/assets/images/wireframes/Talent-desktop.png)
 
-![Easter Page-Desktop](https://github.com/Baldpet/visit-corfu/blob/master/assets/wireframes/easter-desktop.png)
-
-![Places Page-Desktop](https://github.com/Baldpet/visit-corfu/blob/master/assets/wireframes/places-desktop.png)
-
-![Summer Page-Desktop](https://github.com/Baldpet/visit-corfu/blob/master/assets/wireframes/summer-desktop.png)
-
-![Contact Page-Desktop](https://github.com/Baldpet/visit-corfu/blob/master/assets/wireframes/contact-desktop.png)
+![Memory Desktop](https://github.com/Baldpet/LW2-Class-Calculator/blob/master/assets/images/wireframes/Memory-desktop.png)
 
 #### Mobile Wireframes
-![Index Page - Mobile](https://github.com/Baldpet/visit-corfu/blob/master/assets/wireframes/index-mobile.png)
+![Talents Mobile](https://github.com/Baldpet/LW2-Class-Calculator/blob/master/assets/images/wireframes/Talent-mobile.png)
 
-![Easter Page - Mobile](https://github.com/Baldpet/visit-corfu/blob/master/assets/wireframes/easter-mobile.png)
-
-![Places Page - Mobile](https://github.com/Baldpet/visit-corfu/blob/master/assets/wireframes/places-mobile.png)
-
-![Summer Page - Mobile](https://github.com/Baldpet/visit-corfu/blob/master/assets/wireframes/summer-mobile.png)
-
-![Contact Page - Mobile](https://github.com/Baldpet/visit-corfu/blob/master/assets/wireframes/contact-mobile.png)
+![Memory Mobile](https://github.com/Baldpet/LW2-Class-Calculator/blob/master/assets/images/wireframes/Talent-mobile.png)
 
 ## __Features__
 
