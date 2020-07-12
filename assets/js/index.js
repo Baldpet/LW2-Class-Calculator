@@ -72,7 +72,6 @@ function classSelector(box){
 function talentClick(){
     $(".talents-box").click(function(){
         talentReveal($(this));
-        removeTalent($(this));
     })
 }
 
@@ -83,30 +82,23 @@ function talentReveal(box){
         console.log(content)
         console.log(typeof(content))
         if(content === "Squaddie" || content === "Lance Corporal" || content === "Corporal" || content === "Sergeant" || content === "Staff Sergeant" || content === "Tech Sergeant" || content === "Gunnery Sergeant" || content === "Master Sergeant"){
-            $(box).parent().next().children().addClass("hidden");
+            $(".slide").slideToggle("fast");
+            $(".slide").removeClass("slide");
             $(".talents-box").removeClass(["talents-box-active", "talents-box-other"]);
         } else {
-            $(box).parent().next().children().addClass("hidden");
+            $(".slide").slideToggle("fast");
+            $(".slide").removeClass("slide");
             var boxNumber = $(box).index();
-            $(box).parent().next().children().eq(boxNumber).removeClass("hidden");
+            $(box).parent().next().children().eq(boxNumber).slideToggle("slow");
+            $(box).parent().next().children().eq(boxNumber).addClass("slide");
             $(".talents-box").removeClass(["talents-box-active", "talents-box-other"]);
             $(box).addClass("talents-box-active");
             $(box).siblings().addClass("talents-box-other");
         }
     } else {
-        $(box).parent().next().children().removeClass("hidden");
+        $(box).parent().next().children().slideToggle();
     }
 }
-
-function removeTalent(box){
-    $(box).off("click");
-    $(box).click(function(){
-        $(box).parent().next().children().addClass("hidden");
-        $(".talents-box").off("click");
-        $(".talents-box").removeClass(["talents-box-active", "talents-box-other"]);
-        talentClick();
-    })
- }
 
 // ----- Talents Icons -------
 
