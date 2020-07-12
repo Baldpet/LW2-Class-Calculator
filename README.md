@@ -1,6 +1,6 @@
-[![homepage](https://github.com/Baldpet/LW2-Class-Calculator/blob/master/assets/images/skulls2_faded.png)](https://baldpet.github.io/LW2-Class-Calculator/)
+[![homepage](https://github.com/Baldpet/LW2-Class-Calculator/blob/master/assets/images/skulls2_faded.png =250x)](https://baldpet.github.io/LW2-Class-Calculator/)
 
-# __LW2 Talents and Memory Game__
+# __XCOM 2: Long War 2 Talents and Memory Game__
 
 ## __Aim of the Site__
 
