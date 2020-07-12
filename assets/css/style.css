@@ -114,6 +114,27 @@ header {
     margin-bottom: 15px;
 }
 
+.class-selector::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(131,192,206,0.4);
+	-webkit-transition: none;
+	   -moz-transition: none;
+	        transition: none;
+}
+.class-selector:hover::after {
+  width: 120%;
+  background-color: rgba(131,192,206,0);
+  
+	-webkit-transition: all 0.8s ease-in-out;
+	   -moz-transition: all 0.8s ease-in-out;
+	        transition: all 0.8s ease-in-out;
+}
+
 .class-selector p {
     position: absolute;
     top: 50%;
