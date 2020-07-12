@@ -300,7 +300,9 @@ header {
 /*  ------------- Win/Loss Overlay ---------------- */
 
 .win-container,
-.lose-container {
+.win-container-four,
+.lose-container,
+.lose-container-one {
     position: absolute;
     top: 0;
     left: 0; 

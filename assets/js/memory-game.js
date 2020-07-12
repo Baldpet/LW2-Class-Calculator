@@ -297,6 +297,10 @@ function reset() {
     $(".lose-container").off("click");
     $(".lose-container").fadeOut("fast");
     $(".win-container").fadeOut("fast");
+    $(".win-container-four").off("click");
+    $(".lose-container-one").off("click");
+    $(".lose-container-one").fadeOut("fast");
+    $(".win-container-four").fadeOut("fast");
     stopTimer();
         matchedCards= [];
         card1 = undefined;
@@ -401,27 +405,47 @@ function soldierNum() {
 // ---------Game Win/Lose ------------
 
 function gameLose() {
-    $('.lose-container').fadeIn("slow");
+    if($(".star-active").length === 1){
+        console.log("lose")
+        $('.lose-container-one').fadeIn("slow");
+        setTimeout(() => { 
+            $(".lose-container-one").click(function(){
+                reset();
+            })
+        }, 1500);
+    } else {
+        $('.lose-container').fadeIn("slow");
+        setTimeout(() => { 
+            $(".lose-container").click(function(){
+                reset();
+            })
+        }, 1500);
+    }
+
     attemptCounter();
     stopTimer();
-    setTimeout(() => { 
-        $(".lose-container").click(function(){
-            reset();
-        })
-    }, 1500);
 }
 
 function gameWin() {
-    $(".win-container").fadeIn("slow");
-    console.log(difficulty)
+    if($(".star-active").length === 4){
+        console.log("win")
+        $(".win-container-four").fadeIn("slow");
+        setTimeout(() => {
+            $(".win-container-four").click(function(){
+                reset();
+            })
+        }, 1500);
+    } else {
+        $(".win-container").fadeIn("slow");
+        setTimeout(() => {
+            $(".win-container").click(function(){
+                reset();
+            })
+        }, 1500);
+    }
     resetCounter();
     stopTimer();
     bestTime();
-    setTimeout(() => { 
-        $(".win-container").click(function(){
-            reset();
-        })
-    }, 1500);
 }
 
 // ----------Removing/Adding Fixed Top Nav-------------------
