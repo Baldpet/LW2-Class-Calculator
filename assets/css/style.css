@@ -496,6 +496,7 @@ header {
     display: block;
     margin: auto;
     margin-bottom: 15px;
+    width: 18rem;
 }
 
 /* a .link-button {
