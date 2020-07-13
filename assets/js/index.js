@@ -13,43 +13,8 @@ function onYouTubeIframeAPIReady() {
 
 $(".class-selector").click(function(){
     classSelector($(this));
-    let x = $(this).attr("data-class")
-    $(x).removeClass("hidden");
-})
-
-$("#grenadier").click(function(){
-    classSelector($(this));
-    $(".grenadier-talents").removeClass("hidden");
-})
-
-$("#gunner").click(function(){
-    classSelector($(this));
-    $(".gunner-talents").removeClass("hidden");
-})
-
-$("#ranger").click(function(){
-    classSelector($(this));
-    $(".ranger-talents").removeClass("hidden");
-})
-
-$("#sharpshooter").click(function(){
-    classSelector($(this));
-    $(".sharpshooter-talents").removeClass("hidden");
-})
-
-$("#shinobi").click(function(){
-    classSelector($(this));
-    $(".shinobi-talents").removeClass("hidden");
-})
-
-$("#specialist").click(function(){
-    classSelector($(this));
-    $(".specialist-talents").removeClass("hidden");
-})
-
-$("#technical").click(function(){
-    classSelector($(this));
-    $(".technical-talents").removeClass("hidden");
+    let selector = $(this).attr("data-class")
+    $(selector).removeClass("hidden");
 })
 
 function classSelector(box){

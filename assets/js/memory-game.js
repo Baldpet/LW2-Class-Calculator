@@ -448,23 +448,11 @@ function timesWon() {
     }
 		let wins;
     if(difficulty() === 1){
-        wins = parseInt(localStorage.getItem("winOne")) + 1;
-        localStorage.setItem("winOne", wins);
-        $(".wins").html(function(){
-            return " " + wins + " ";
-        });
+        difficultyWins("winOne");
     } else if( difficulty() === 2){
-        wins = parseInt(localStorage.getItem("winTwo")) + 1;
-        localStorage.setItem("winTwo", wins);
-        $(".wins").html(function(){
-            return " " + wins + " ";
-        });
+        difficultyWins("winTwo");
     } else if(difficulty() === 3){
-        wins = parseInt(localStorage.getItem("winThree")) + 1;
-        localStorage.setItem("winThree", wins);
-        $(".wins").html(function(){
-            return " " + wins + " ";
-        });
+        difficultyWins("winThree");
     } else if(difficulty() === 4){
         wins = parseInt(localStorage.getItem("winFour")) + 1;
         localStorage.setItem("winFour", wins);
@@ -472,6 +460,15 @@ function timesWon() {
             return " " + wins + " ";
         });
     }
+}
+
+function difficultyWins(WinsNumber){
+    let wins;
+    wins = parseInt(localStorage.getItem(WinsNumber)) + 1;
+        localStorage.setItem(WinsNumber, wins);
+        $(".wins").html(function(){
+            return " " + wins + " ";
+        });
 }
 
 // ----------Removing/Adding Fixed Top Nav-------------------
