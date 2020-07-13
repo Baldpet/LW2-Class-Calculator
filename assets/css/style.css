@@ -269,6 +269,10 @@ header {
     color: #cccc00;
 }
 
+.attempt-title {
+    padding-right: 5px;
+}
+
 .attempt-counter {
     color: red;
     font-size: 2.5rem;
@@ -353,7 +357,9 @@ header {
     background-color: #343a40;
     border-radius: 10px 10px;
     transform-style: preserve-3d ;
+    -webkit-transform-style: preserve-3d;
     transition: 0.8s;
+    -webkit-transition: 0.8s;
     transform: scale(1);
     
 }
@@ -385,6 +391,7 @@ header {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     
 }
 
