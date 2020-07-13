@@ -11,9 +11,10 @@ function onYouTubeIframeAPIReady() {
 
 // ----- Class Selector -------
 
-$("#assault").click(function(){
+$(".class-selector").click(function(){
     classSelector($(this));
-    $(".assault-talents").removeClass("hidden");
+    let x = $(this).attr("data-class")
+    $(x).removeClass("hidden");
 })
 
 $("#grenadier").click(function(){
@@ -79,8 +80,6 @@ function talentClick(){
 function talentReveal(box){
     if (window.matchMedia('(max-width: 768px)').matches){
         var content = $(box).children("p").html();
-        console.log(content)
-        console.log(typeof(content))
         if(content === "Squaddie" || content === "Lance Corporal" || content === "Corporal" || content === "Sergeant" || content === "Staff Sergeant" || content === "Tech Sergeant" || content === "Gunnery Sergeant" || content === "Master Sergeant"){
             $(".slide").slideToggle("fast");
             $(".slide").removeClass("slide");
@@ -105,7 +104,7 @@ function talentReveal(box){
 function talentIcon(){
     $(".talents-icon").click(function(){
         var iconRow = $(this).parent().parent().parent();
-        var icons = $(iconRow).find(".talents-icon").removeClass("talents-active");
+        $(iconRow).find(".talents-icon").removeClass("talents-active");
         $(this).addClass("talents-active");
     })
 }

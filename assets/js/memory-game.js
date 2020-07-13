@@ -71,30 +71,22 @@ $("#resetGame").click(function(){
 
 function starBestTime() {
     if(difficulty() === 1){
-        if(localStorage.getItem("timeOne") === null){
-            $("#best-time").html("0")
-        } else {
-            $("#best-time").html(localStorage.getItem("timeOne"));
-        }     
+        setBestTime("timeOne");
     } else if(difficulty() === 2){
-        if(localStorage.getItem("timeTwo") === null){
-            $("#best-time").html("0")
-        } else {
-            $("#best-time").html(localStorage.getItem("timeTwo"));
-        }
+        setBestTime("timeTwo");
     } else if(difficulty() === 3){
-        if(localStorage.getItem("timeThree") === null){
-            $("#best-time").html("0")
-        } else {
-            $("#best-time").html(localStorage.getItem("timeThree"));
-        }
+        setBestTime("timeThree");
     } else if(difficulty() === 4){
-        if(localStorage.getItem("timeFour") === null){
+        setBestTime("timeFour");
+    }
+}
+
+function setBestTime(time){
+    if(localStorage.getItem(time) === null){
             $("#best-time").html("0")
         } else {
-            $("#best-time").html(localStorage.getItem("timeFour"));
-        }
-    }
+            $("#best-time").html(localStorage.getItem(time));
+        }     
 }
 
 // ---------Card Drawing and Deck Structure ------------
@@ -103,13 +95,13 @@ function deckOne(){
     var deckOne = [];
         
     var soldierDeckOne = shuffle(soldierDeck);
-    for(var i = 0; i < soldierDeckOne.length; i++) {
+    for(let i = 0; i < soldierDeckOne.length; i++) {
         deckOne.push(soldierDeckOne[i]);
         deckOne.push(soldierDeckOne[i]);
     }
 
     var alienDeckOne = shuffle(alienDeck);
-    for(var i = 0; i < alienDeckOne.length - 2; i++) {
+    for(let i = 0; i < alienDeckOne.length - 2; i++) {
         deckOne.push(alienDeckOne[i]);
         deckOne.push(alienDeckOne[i]);
     }
@@ -129,7 +121,7 @@ function deckTwo(){
     }
 
     var alienDeckTwo = shuffle(alienDeck);
-    for(var i = 0; i < alienDeckTwo.length - 1; i++) {
+    for(let i = 0; i < alienDeckTwo.length - 1; i++) {
         deckTwo.push(alienDeckTwo[i]);
         deckTwo.push(alienDeckTwo[i]);
     }
@@ -143,13 +135,13 @@ function deckThree(){
     var deckThree = [];
         
     var soldierDeckThree = shuffle(soldierDeck);
-    for(var i = 0; i < soldierDeckThree.length - 2; i++) {
+    for(let i = 0; i < soldierDeckThree.length - 2; i++) {
         deckThree.push(soldierDeckThree[i]);
         deckThree.push(soldierDeckThree[i]);
     }
 
     var alienDeckThree = shuffle(alienDeck);
-    for(var i = 0; i < alienDeckThree.length; i++) {
+    for(let i = 0; i < alienDeckThree.length; i++) {
         deckThree.push(alienDeckThree[i]);
         deckThree.push(alienDeckThree[i]);
     }
@@ -163,13 +155,13 @@ function deckFour(){
     var deckFour = [];
         
     var soldierDeckFour = shuffle(soldierDeck);
-    for(var i = 0; i < soldierDeckFour.length - 2; i++) {
+    for(let i = 0; i < soldierDeckFour.length - 2; i++) {
         deckFour.push(soldierDeckFour[i]);
         deckFour.push(soldierDeckFour[i]);
     }
 
     var alienDeckFour = shuffle(alienDeck);
-    for(var i = 0; i < alienDeckFour.length - 1; i++) {
+    for(let i = 0; i < alienDeckFour.length - 1; i++) {
         deckFour.push(alienDeckFour[i]);
         deckFour.push(alienDeckFour[i]);
         deckFour.push(alienDeckFour[i]);
@@ -187,18 +179,16 @@ function difficulty(){
 }
 
 function cardDraw(){
+  let deck;
     if(difficulty() === 1){
-        var deck = deckOne();
+        deck = deckOne();
     } else if(difficulty() === 2) {
-        var deck = deckTwo();
+        deck = deckTwo();
     } else if(difficulty() === 3) {
-        var deck = deckThree();
+        deck = deckThree();
     } else {
-        var deck = deckFour();
+        deck = deckFour();
     };
-
-    console.log(deck);
-
     return deck
 }
 
@@ -456,27 +446,27 @@ function timesWon() {
         localStorage.setItem("winThree", 0);
         localStorage.setItem("winFour", 0);
     }
-
+		let wins;
     if(difficulty() === 1){
-        var wins = parseInt(localStorage.getItem("winOne")) + 1;
+        wins = parseInt(localStorage.getItem("winOne")) + 1;
         localStorage.setItem("winOne", wins);
         $(".wins").html(function(){
             return " " + wins + " ";
         });
     } else if( difficulty() === 2){
-        var wins = parseInt(localStorage.getItem("winTwo")) + 1;
+        wins = parseInt(localStorage.getItem("winTwo")) + 1;
         localStorage.setItem("winTwo", wins);
         $(".wins").html(function(){
             return " " + wins + " ";
         });
     } else if(difficulty() === 3){
-        var wins = parseInt(localStorage.getItem("winThree")) + 1;
+        wins = parseInt(localStorage.getItem("winThree")) + 1;
         localStorage.setItem("winThree", wins);
         $(".wins").html(function(){
             return " " + wins + " ";
         });
     } else if(difficulty() === 4){
-        var wins = parseInt(localStorage.getItem("winFour")) + 1;
+        wins = parseInt(localStorage.getItem("winFour")) + 1;
         localStorage.setItem("winFour", wins);
         $(".win-four").html(function(){
             return " " + wins + " ";
