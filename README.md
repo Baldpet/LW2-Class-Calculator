@@ -42,26 +42,33 @@ Regarding the memory game the challenge was how to include the number of cards r
 
 ## __Features__
 
-* Feature 1 - 
+* Feature 1 - Information of each talent for each class.
 
-* Feature 2 - 
+* Feature 2 - Have the talents interative so that the user can build their own soldier.
 
-* Feature 3 - 
+* Feature 3 - Some beginner builds ready made for new players.
 
-* Feature 4 - 
+* Feature 4 - Information from an expert of those who want to learn more - Youtube embedded.
 
-* Feature 5 - 
+* Feature 5 - Themed memory game.
 
-* Feature 6 - 
+* Feature 6 - Memory game has 4 different levels of difficulty to challenge different users.
 
-* Feature 7 - 
+* Feature 7 - Memory game has a timer and stores the users best score for each difficulty to provide an incentive to play again.
 
-* Feature 8 - 
+* Feature 8 - Memory game stores the number of times a user has won at a difficulty and lets them know in the winning message.
 
 
 ## __Future Goals__
 
+There are a number of areas that the site can improve or expand after going live:
+    * Talents Page
+        * There are a 2 additional classes that do not fit the same format as the other 8 classes, which would be good to incorporate.
+        * The same information and interativity for the base game to allow users for just Xcom 2 to use the site.
 
+    * Memory Game
+        * Additional difficulty levels can be added.
+        * Audio on the game and for a win or loss.
 
 
 ## __Technology Used__
@@ -131,7 +138,8 @@ The website has loaded on all browsers and devices tested which are shown:
     * Microsoft Edge
     * Firefox
     * Chrome
-    * Mobile (Android)
+    * Samsung Mobile (Android)
+    * Safari Mobile
 
 The bugs that were encountered have been noted below in the Known Issues section.
 
@@ -149,15 +157,18 @@ Friends and family provided useful feedback which has allowed me to adjust and a
 ## __Known Issues & Resolutions__
 
 * Internet Explorer 11
-    * 
+    * The white background on the talent and the memory game page does not render.
+    * The memory game does not launch.
 * Microsoft Edge
-    * 
+    * No issues detected.
 * Firefox
-    * No issues detected
+    * No issues detected.
 * Chrome
-    * No issues detected
-* Mobile (Android)
-    * No issues detected    
+    * No issues detected.
+* Samsung Mobile (Android)
+    * No issues detected.
+* Safari Mobile
+    * No issues detected.
 
 ## __Deployment__
 
