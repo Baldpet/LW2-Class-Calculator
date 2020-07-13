@@ -110,6 +110,10 @@ header {
     color:#ad09c1;
 }
 
+.index-intro{
+    border-radius: 10px;
+}
+
 /*  ------------- Class Intro and Selection ---------------- */
 
 .selector-col {
