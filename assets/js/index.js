@@ -1,21 +1,10 @@
-// ----- Youtube ---------
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
-}
-
 // ----- Class Selector -------
 
 $(".class-selector").click(function(){
     classSelector($(this));
-    let selector = $(this).attr("data-class")
+    let selector = $(this).attr("data-class");
     $(selector).removeClass("hidden");
-})
+});
 
 function classSelector(box){
     $(".class-selector").removeClass("talents-active");
@@ -38,7 +27,7 @@ function classSelector(box){
 function talentClick(){
     $(".talents-box").click(function(){
         talentReveal($(this));
-    })
+    });
 }
 
 
@@ -71,7 +60,7 @@ function talentIcon(){
         var iconRow = $(this).parent().parent().parent();
         $(iconRow).find(".talents-icon").removeClass("talents-active");
         $(this).addClass("talents-active");
-    })
+    });
 }
 
 // ----- Prebuilt Talents Icons -------
@@ -81,13 +70,13 @@ $(".prebuilt-talents").click(function(){
     var preTalentSelect = "." + preTalent;
     $(".talents-icon").removeClass("talents-active");
     $(preTalentSelect).addClass("talents-active");
-})
+});
 
 // ----- Reset -------
 
 $(".talents-reset-button").click(function(){
     resetTalents();
-})
+});
 
 function resetTalents(){
     $(".talents-icon").removeClass("talents-active");

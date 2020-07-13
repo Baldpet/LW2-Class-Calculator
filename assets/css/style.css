@@ -78,9 +78,6 @@ div .box-style {
     margin-bottom: 20px;
 }
 
-/*  ------------- Colors ---------------- */
-
-
 /*  ------------- Header ---------------- */
 
 header {
@@ -550,12 +547,6 @@ header {
     margin-bottom: 15px;
     width: 18rem;
 }
-
-/* a .link-button {
-    color: #ffffff;
-    height: 100%;
-    width: 100%;
-} */
 
 a:hover {
     color: #ffffff;

@@ -1,6 +1,6 @@
 const soldierDeck = ["soldierA","soldierB","soldierC", "soldierD", "soldierE", "soldierF", "soldierG"];
 const alienDeck = ["muton", "chryssalid", "sectoid"];
-let matchedCards = []
+let matchedCards = [];
 
 if(localStorage.getItem("timeOne") === null){
     $("#best-time").html("0");
@@ -22,7 +22,7 @@ function shuffle(array) {
         array[randomIndex] = temporaryValue;
     }
 
-    return array
+    return array;
 }
 
 // ---------Difficulty Switching ------------
@@ -39,7 +39,7 @@ $(".fa-star").click(function(){
     } else {
         starSwitch = 4;
     }
-})
+});
 
 function StarSwitchConfirm(){
     if(starSwitch === 1){
@@ -67,7 +67,7 @@ $("#resetGame").click(function(){
     reset();
     StarSwitchConfirm();
     starBestTime();
-})
+});
 
 function starBestTime() {
     if(difficulty() === 1){
@@ -83,7 +83,7 @@ function starBestTime() {
 
 function setBestTime(time){
     if(localStorage.getItem(time) === null){
-            $("#best-time").html("0")
+            $("#best-time").html("0");
         } else {
             $("#best-time").html(localStorage.getItem(time));
         }     
@@ -188,8 +188,8 @@ function cardDraw(){
         deck = deckThree();
     } else {
         deck = deckFour();
-    };
-    return deck
+    }
+    return deck;
 }
 
 // ---------Adding the deck to the gameboard ------------
@@ -216,7 +216,7 @@ function startTimer() {
     timer = setInterval(function(){
         sec++;
         $("#timer").html(sec);
-    }, 1000)
+    }, 1000);
 
 }
 
@@ -236,8 +236,8 @@ function bestTime() {
         bestTimeCheck = 'timeThree';
     } else if(difficulty() === 4){
         bestTimeCheck = 'timeFour';
-    };
-    bestTimeOne(bestTimeCheck)
+    }
+    bestTimeOne(bestTimeCheck);
 }
 
 function bestTimeOne(bestTimeCheck) {
@@ -272,7 +272,7 @@ $(".start").click(function(){
     newGame();
     startTimer();
     flipCard();   
-})
+});
 
 // ---------reset game ------------
 
@@ -314,8 +314,8 @@ function flipCard(){
                 busy = true;
                 $(this).addClass("flip");
                 if(hasFlipped === true) {
-                    card2 = $(this)
-                    checkForCardMatch()             
+                    card2 = $(this);
+                    checkForCardMatch();            
                 } else {
                     hasFlipped = true;
                     card1 = $(this);
@@ -339,7 +339,7 @@ function checkForCardMatch(card) {
         checkVictory();
         busy = false;
     } else {
-        unflip()
+        unflip();
     }
     hasFlipped = false;
 }
@@ -352,25 +352,25 @@ function unflip(){
                 busy = true;
                 $(this).addClass("flip");  
                 if(hasFlipped === true) {
-                    card2 = $(this)
-                    checkForCardMatch()
+                    card2 = $(this);
+                    checkForCardMatch();
                 } else {
                     hasFlipped = true;
                     card1 = $(this);
                     card1.off("click");
                     busy = false;
-                };
+                }
             }
         });
         card2.removeClass("flip");
         busy = false;
-    }, 700)
+    }, 700);
 }
 
 function checkLose() {
     var cardName = card1.attr("name");
     if(cardName === "muton" || cardName === "sectoid" || cardName === "chryssalid") {
-        gameLose() 
+        gameLose();
     }
 }
 
@@ -389,7 +389,7 @@ function soldierNum() {
         return 10;
     } else {
         return 10;
-    };
+    }
 }
 
 // ---------Game Win/Lose ------------
@@ -400,14 +400,14 @@ function gameLose() {
         setTimeout(() => { 
             $(".lose-container-one").click(function(){
                 reset();
-            })
+            });
         }, 1500);
     } else {
         $('.lose-container').fadeIn("slow");
         setTimeout(() => { 
             $(".lose-container").click(function(){
                 reset();
-            })
+            });
         }, 1500);
     }
 
@@ -423,14 +423,14 @@ function gameWin() {
         setTimeout(() => {
             $(".win-container-four").click(function(){
                 reset();
-            })
+            });
         }, 1500);
     } else {
         $(".win-container").fadeIn("slow");
         setTimeout(() => {
             $(".win-container").click(function(){
                 reset();
-            })
+            });
         }, 1500);
     }
 
