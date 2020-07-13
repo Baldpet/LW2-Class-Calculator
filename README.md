@@ -58,6 +58,13 @@ Regarding the memory game the challenge was how to include the number of cards r
 
 * Feature 8 - Memory game stores the number of times a user has won at a difficulty and lets them know in the winning message.
 
+I have provided some screen shots of the game being played below:
+
+![Desktop Game](https://github.com/Baldpet/LW2-Class-Calculator/blob/master/assets/images/wireframes/screenshot-1.png)
+
+![Game Lost](https://github.com/Baldpet/LW2-Class-Calculator/blob/master/assets/images/wireframes/screenshot-2.png)
+
+![Mobile View Game](https://github.com/Baldpet/LW2-Class-Calculator/blob/master/assets/images/wireframes/screenshot-3.png)
 
 ## __Future Goals__
 
