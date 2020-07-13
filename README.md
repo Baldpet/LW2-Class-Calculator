@@ -66,6 +66,10 @@ There are a number of areas that the site can improve or expand after going live
 * Talents Page
     * There are a 2 additional classes that do not fit the same format as the other 8 classes, which would be good to incorporate.
     * The same information and interativity for the base game to allow users for just Xcom 2 to use the site.
+    * I would like to add a feature to save the builds that people have made, either via:
+        * Email
+        * PDF
+        * Print
 
 * Memory Game
     * Additional difficulty levels can be added.
@@ -170,6 +174,7 @@ Friends and family provided useful feedback which has allowed me to adjust and a
     * No issues detected.
 * Safari Mobile
     * Backface-visibility does not seem to be working even with the -webkit- prefix.
+        * This has been fixed, one of the div backgrounds on the card was showing over the card that should have been showing.
 
 ## __Deployment__
 
