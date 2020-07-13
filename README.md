@@ -62,13 +62,14 @@ Regarding the memory game the challenge was how to include the number of cards r
 ## __Future Goals__
 
 There are a number of areas that the site can improve or expand after going live:
-    * Talents Page
-        * There are a 2 additional classes that do not fit the same format as the other 8 classes, which would be good to incorporate.
-        * The same information and interativity for the base game to allow users for just Xcom 2 to use the site.
 
-    * Memory Game
-        * Additional difficulty levels can be added.
-        * Audio on the game and for a win or loss.
+* Talents Page
+    * There are a 2 additional classes that do not fit the same format as the other 8 classes, which would be good to incorporate.
+    * The same information and interativity for the base game to allow users for just Xcom 2 to use the site.
+
+* Memory Game
+    * Additional difficulty levels can be added.
+    * Audio on the game and for a win or loss.
 
 
 ## __Technology Used__
@@ -94,10 +95,10 @@ Testing was conducted throughout the project, each new feature that was added wa
 
 ### Validation
 
-The HTML code for each page has been validated on the W3C HTML Validation tool, with no issues.
+The HTML code for each page has been validated on the W3C HTML Validation tool, the youtube embedded content came back with an
+error on using "frameborder". I took this out and used CSS to remove the border.
 
-The CCS code has been validated on the W3C CSS Validation tool, there is an error with the color for the Instagram logo.  
-I have noted this is causing an issue on the Internet Explorer browser which has been detailed in the known issues section. Unfortunately I was not able to work around this issue.
+The CCS code has been validated on the W3C CSS Validation tool, there were no errors. 
 
 ### Screen Sizes
 
@@ -168,7 +169,7 @@ Friends and family provided useful feedback which has allowed me to adjust and a
 * Samsung Mobile (Android)
     * No issues detected.
 * Safari Mobile
-    * No issues detected.
+    * Backface-visibility does not seem to be working even with the -webkit- prefix.
 
 ## __Deployment__
 
