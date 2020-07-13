@@ -110,8 +110,30 @@ header {
     padding: 0;
 }
 
-.memory-link:hover {
-    color:#ad09c1;
+.memory-link {
+    width: 9rem;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #343a40;
+    border: 0.2rem #83c0ce solid;
+    border-radius: 0px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.memory-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.memory-link img{
+    width: 100%;
+    height: auto;
+}
+
+.memory-link:hover{
+    transform: scale(1.1);
 }
 
 .index-intro{
