@@ -87,6 +87,10 @@ header {
     margin-bottom: 3px;
 }
 
+.logo {
+    color: white;
+    text-decoration: none;
+}
 
 /*  ------------- Hero Image ---------------- */
 
