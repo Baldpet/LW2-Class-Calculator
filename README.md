@@ -5,7 +5,7 @@
 The basic aim of the site was to offer players (new or old) to be able to plan their soldier builds for their playthrough of Xcom 2: Long War 2.
 I wanted to build a site that had the information all in one place to cover all the questions that they might have had.
 
-Additionally if players wanted a change of pace they could play on the themed memory game.
+Additionally if players wanted a change of pace they could play on the XCOM 2 themed memory game.
 
 Please click the following link to the live website: https://baldpet.github.io/LW2-Class-Calculator/
 ## __UX__
@@ -81,6 +81,8 @@ There are a number of areas that the site can improve or expand after going live
 * Memory Game
     * Additional difficulty levels can be added.
     * Audio on the game and for a win or loss.
+    * Add a global weekly leaderboard of best times for people to compete.
+    * Add the ability to easily share their scores on social media.
 
 
 ## __Technology Used__
@@ -116,8 +118,8 @@ The CCS code has been validated on the W3C CSS Validation tool, there were no er
 There was testing throughout the project to make sure that the project looks good and works on multiple screen sizes and devices.  
 This was done through the Chrome developer tools by reducing the width of the screen and also utilising their mobile device view.
 
-During this testing there were a few challenges to responsiveness which have required some media query CSS to resolve.  
-Mainly this was on the talents page which the wordins were stretching out of their relevant spaces.
+During this testing there were a few challenges to responsiveness which have required some media queries CSS to resolve.  
+Mainly this was on the talents page which the descriptions were stretching out of their relevant spaces.
 
 ### Site Links
 
